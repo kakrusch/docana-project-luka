@@ -31,6 +31,9 @@ _Group members: Name 1, Name 2, Name 3_
 
 Start off by setting the stage for your project. Give a brief overview of relevant studies or work that have tackled similar issues. Then, clearly describe the main question or problem your project is designed to solve.
 
+### Research Questions
+
+
 ## Dataset
 
 Provide a short description of the dataset used in your project. Focus on highlighting the aspects that are particularly relevant to your work.
@@ -38,7 +41,6 @@ Provide a short description of the dataset used in your project. Focus on highli
 ## Methods
 
 ### Setup 
-
 
 Outline the tools, software, and hardware environment, along with configurations used for conducting your experiments. Be sure to document the Python version and other dependencies clearly. Provide step-by-step instructions on how to recreate your environment, ensuring anyone can replicate your setup with ease:
 
@@ -56,6 +58,10 @@ pip install -r requirements.txt
 ```
 print("hellos woerld")
 ```
+
+#### What we did
+ - count post number to pick corpora
+ - extract explatives using POS tagger: adjust research question to OK
 
 ### Experiments
 
