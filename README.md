@@ -53,6 +53,10 @@ Include a `requirements.txt` file in your project repository. This file should l
 pip install -r requirements.txt
 ```
 
+```
+print("hellos woerld")
+```
+
 ### Experiments
 
 Report how you conducted the experiments. We suggest including detailed explanations of the preprocessing steps and model training in your project. For the preprocessing, describe  data cleaning, normalization, or transformation steps you applied to prepare the dataset, along with the reasons for choosing these methods. In the section on model training, explain the methodologies and algorithms you used, detail the parameter settings and training protocols, and describe any measures taken to ensure the validity of the models.
