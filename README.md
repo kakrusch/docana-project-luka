@@ -32,7 +32,7 @@ _Group members: Name 1, Name 2, Name 3_
 Start off by setting the stage for your project. Give a brief overview of relevant studies or work that have tackled similar issues. Then, clearly describe the main question or problem your project is designed to solve.
 
 ### Research Questions
-
+ - Meaning differences across subreddits - focus on sentiment and word similarity of the word "ok" and its variations
 
 ## Dataset
 
