@@ -1,4 +1,4 @@
-title: Document Analysis Semester Project Ludmila and Kascha
+title: Document Analysis Semester Project Ludmila, Alex and Kascha
 description: helloo
 show_downloads: True
 plugins:
@@ -10,4 +10,4 @@ include:
   - README.md
   - REPORT.md
 
-theme: jekyll-theme-minimal
+theme: jekyll-theme-hacker
