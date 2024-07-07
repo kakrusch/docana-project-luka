@@ -16,14 +16,24 @@
 
 # Project Title
 
-_Group members: Name 1, Name 2, Name 3_
+_Group members: Alex Weyhe, Kascha Kruschwitz, Ludmila Bajuk
 
 ## Introduction
 
 Start off by setting the stage for your project. Give a brief overview of relevant studies or work that have tackled similar issues. Then, clearly describe the main question or problem your project is designed to solve.
 
 ### Research Questions
- - Meaning differences across subreddits - focus on sentiment and word similarity of the word "ok" and its variations
+- Is the meaning of OK and its variations always the same?
+   - Are the different spellings associated with different uses, meanings etc...?
+   - Are there differences across topics/user types?
+  
+Hypothesis:
+- we expect differences 
+
+## Background 
+- literature on different uses of ok
+- different word senses
+
 
 ## Dataset
 
