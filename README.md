@@ -69,6 +69,12 @@ print("hellos woerld")
 Report how you conducted the experiments. We suggest including detailed explanations of the preprocessing steps and model training in your project. For the preprocessing, describe  data cleaning, normalization, or transformation steps you applied to prepare the dataset, along with the reasons for choosing these methods. In the section on model training, explain the methodologies and algorithms you used, detail the parameter settings and training protocols, and describe any measures taken to ensure the validity of the models.
 
 ## Results and Discussion
+- wordsenses - lesk
+- sentiment
+- pairwise similarity of similar words within embedding: 3 very similar, 2 very different ('O.K', 'okey'), 'k' unreliable
+- cosine similarity of OKs within subbreddit - 
+
+
 
 Present the findings from your experiments, supported by visual or statistical evidence. Discuss how these results address your main research question.
 
