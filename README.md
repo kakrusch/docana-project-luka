@@ -70,7 +70,7 @@ Report how you conducted the experiments. We suggest including detailed explanat
 
 ## Results and Discussion
 - wordsenses - lesk
-- sentiment
+- sentiment - 
 - pairwise similarity of similar words within embedding: 3 very similar, 2 very different ('O.K', 'okey'), 'k' unreliable
 - cosine similarity of OKs within subbreddit - 
 
@@ -86,9 +86,9 @@ Summarize the major outcomes of your project, reflect on the research findings, 
 
 | Team Member  | Contributions                                             |
 |--------------|-----------------------------------------------------------|
-| Alice Smith  | Data collection, preprocessing, model training, evaluation|                                                       |
-| Bob Johnson  | ...                                                       |
-| ...          | ...                                                       |
+| Alex Weyhe            | Data collection, preprocessing, model training, evaluation|                                                       |
+| Kascha Kruschwitz     | ...                                                       |
+| Ludmila Bajuk         | ...                                                       |
 
 ## References
 
