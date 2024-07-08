@@ -35,13 +35,21 @@ Hypothesis:
 - different word senses
 
 
+#### What we did
+ - count post number to pick corpora
+ - extract explatives using POS tagger: adjust research question to OK
 ## Dataset
 
 Provide a short description of the dataset used in your project. Focus on highlighting the aspects that are particularly relevant to your work.
+what parts of the datas set we used and why 
 
-## Methods
 
-### Setup 
+
+## METHODS
+
+### prepocessing
+
+### Model Setup 
 
 Outline the tools, software, and hardware environment, along with configurations used for conducting your experiments. Be sure to document the Python version and other dependencies clearly. Provide step-by-step instructions on how to recreate your environment, ensuring anyone can replicate your setup with ease:
 
@@ -60,13 +68,14 @@ pip install -r requirements.txt
 print("hellos woerld")
 ```
 
-#### What we did
- - count post number to pick corpora
- - extract explatives using POS tagger: adjust research question to OK
-
-### Experiments
+### comparison metrics
 
 Report how you conducted the experiments. We suggest including detailed explanations of the preprocessing steps and model training in your project. For the preprocessing, describe  data cleaning, normalization, or transformation steps you applied to prepare the dataset, along with the reasons for choosing these methods. In the section on model training, explain the methodologies and algorithms you used, detail the parameter settings and training protocols, and describe any measures taken to ensure the validity of the models.
+
+#### words senses 
+#### cosine similarity 
+#### overlapping words
+#### sentiment analysis 
 
 ## Results and Discussion
 - wordsense - lesk
