@@ -1,1 +1,14 @@
-hi
+datasets
+nltk
+pandas
+string 
+re
+gensim
+matplotlib
+numpy
+itertools
+vaderSentiment
+os
+codecs
+math
+statistics
