@@ -11,4 +11,4 @@ include:
   - README.md
   - REPORT.md
 
-theme: jekyll-theme-merlot
+theme: jekyll-theme-minimal
