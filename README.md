@@ -108,7 +108,7 @@ Report how you conducted the experiments. We suggest including detailed explanat
 
 #### overlapping words
 
-A pairwise semantic similarity analysis was carried out to compare the overlapping most similar words of each OK and their corresponding similarity scores. For this analysis, we extracted the similar words of all OKs in two subreddits and compares only the overlapping words. We paired all the subreddit with each other obtaining 6 different pairs. 
+A pairwise semantic similarity analysis was carried out to compare the overlapping most similar words of each OK and their corresponding similarity scores. For this analysis, we extracted the similar words of all OKs in two subreddits and compares only the overlapping words. We paired all the subreddit with each other obtaining 6 different pairs. In this case, the only OKs that had overlapping similar were 'ok', 'okay', and 'Ok'; 'k' only had similar overlapping words or letter with in a few pairs, however, they were not reliable wince it was a one letter embedding.
 
 For each pair we got the mean semantic similarity for each similar and overlapping word for each OK, so that we got now one score for each word in the list of overlaping words. Once every word had only one score, we averaged those scores (in the case if pair1: pair1 = 
 get_most_similar_words(tifu_sim_ok, askreddit_sim_ok)
@@ -116,6 +116,7 @@ get_most_similar_words(tifu_sim_ok, askreddit_sim_ok)
 we get the mean value of the scores we got from the first 6 words found in the 'okay' overlapping words list). 
 
 After getting the mean score for each okay in each subreddit, we calculated the final mean score of each OK across subreddits obtaining in that way the semantic similarity of the same OK in different contexts.
+![Word Overlapping Semantic Similarity](https://github.com/kakrusch/docana-project-luka/assets/162272922/5a572432-a872-4175-96e5-f51b15b836ae)
 
 
 #### Sentiment analysis 
