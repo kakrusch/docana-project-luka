@@ -137,8 +137,8 @@ Summarize the major outcomes of your project, reflect on the research findings, 
 | Team Member           | Contributions                                             |
 |-----------------------|-----------------------------------------------------------|
 | Alex Weyhe            | Data collection, preprocessing, model training, evaluation|                                                       
-| Kascha Kruschwitz     | ... hello                                                      |
-| Ludmila Bajuk         | ...                                                       |
+| Kascha Kruschwitz     | ... hello                                                 |
+| Ludmila Bajuk         | ...  :)                                                   |
 
 ## References
 
