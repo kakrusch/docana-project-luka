@@ -33,26 +33,26 @@ literature
 
 Jung, 2008
 
- - Condon (1986): verbal okay has 3 pragmatic uses in decision-making interaction
-      - the beginning of the entire discourse.
-      - the transition from a non-decision sequence frame to a decision discourse
-      - the transition from one decision sequence to the next
-      - Marker of transition
-   - Beach (1993):
-      - free-standing receipt marker
-      - Again marker of discourse transitions
+- Condon (1986): verbal okay has 3 pragmatic uses in decision-making interaction
+   - the beginning of the entire discourse.
+   - the transition from a non-decision sequence frame to a decision discourse
+   - the transition from one decision sequence to the next
+   - Marker of transition
+- Beach (1993):
+   - free-standing receipt marker
+   - Again marker of discourse transitions
 
 Adegbija and Bello, 2019
-   - Burchfield (1982) - american english (? - could be british)
-        1. Adjective uses: “correct,' `all right,' `satisfactory,'`good,' `well,' `everything is in order,' or `in good health
-        2.  Phrase: “acceptable to me”
-        3.  Response particle like “yes” or “certainly”
-        4.  “signal social or cultural acceptance, being fashionable, having or showing prestige, belonging to a high class”
-        5.  Transitive Verbs
-   - Nigerian uses:
-        1. OK as a gap filler
-        2. Expressing a sense of surprise
-        3. As a marker of discourse termination “stop it!”
+- Burchfield (1982) - american english (? - could be british)
+     1. Adjective uses: “correct,' `all right,' `satisfactory,'`good,' `well,' `everything is in order,' or `in good health
+     2.  Phrase: “acceptable to me”
+     3.  Response particle like “yes” or “certainly”
+     4.  “signal social or cultural acceptance, being fashionable, having or showing prestige, belonging to a high class”
+     5.  Transitive Verbs
+- Nigerian uses:
+     1. OK as a gap filler
+     2. Expressing a sense of surprise
+     3. As a marker of discourse termination “stop it!”
  
 
 
