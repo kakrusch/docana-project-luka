@@ -71,6 +71,8 @@ Report how you conducted the experiments. We suggest including detailed explanat
 
 #### cosine similarity 
 
+| ![Graph of Cosine Similarity of OKs in Askreddit](/figures/ok_askred.png)  | ![Graph of Cosine Similarity of OKs in League of Legends](/figures/ok_lol.png) |
+| ![Graph of Cosine Similarity of OKs in Relationships](/figures/ok_relations.png)  | ![Graph of Cosine Similarity of OKs in TIFU](/figures/ok_tifu.png) |
 
 #### overlapping words
 
