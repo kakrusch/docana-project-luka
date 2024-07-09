@@ -31,31 +31,28 @@ Hypothesis:
 
 literature 
 Jung, 2008
-·       Condon (1986): verbal okay has 3 pragmatic uses in decision-making interactions
-o   1. the beginning of the entire discourse
-o   2. the transition from a non-decision sequence frame to a decision discourse
-o   3. the transition from one decision sequence to the next
-o   Marker of transition
-·       Beach (1993):
-o   1. free-standing receipt marker
-o   2. Again marker of discourse transitions
- 
-Adegbija and Bello, 2019
-·       Okay in Nigerian English
-·       Burchfield (1982)
-o   Adjective uses: “correct,' `all right,' `satisfactory,'`good,' `well,' `everything is in order,' or `in good health'
-o   Phrase: “acceptable to me”
-o   Response particle like “yes” or “certainly”
-o   “signal social or cultural acceptance, being fashionable, having or showing prestige, belonging to a high class”
-o   Transitive Verb
-·       Nigerian uses:
-o   OK as a gap filler
-o   Expressing a sense of surprise
-o   As a marker of discourse termination
-o   “stop it!”
- 
- 
+Condon (1986): verbal okay has 3 pragmatic uses in decision-making interaction
+   1. the beginning of the entire discourse.
+   2.  the transition from a non-decision sequence frame to a decision discourse
+   3.   the transition from one decision sequence to the next
+   4.     Marker of transition
+Beach (1993):
+   1. free-standing receipt marker
+   2.  Again marker of discourse transitions
+
+Burchfield (1982)
+   1. Adjective uses: “correct,' `all right,' `satisfactory,'`good,' `well,' `everything is in order,' or `in good health'
+   2. Phrase: “acceptable to me”
+   3. Response particle like “yes” or “certainly”
+   4. “signal social or cultural acceptance, being fashionable, having or showing prestige, belonging to a high class”
+   5. Transitive Verbs
+   6. 
 Adegbija, E., & Bello, J. (2001). The semantics of ‘okay’(OK) in Nigerian English. World Englishes, 20(1), 89-98.
+Nigerian uses:
+   1. OK as a gap filler
+   2. Expressing a sense of surprise
+   3. As a marker of discourse termination “stop it!”
+ 
 
 
 #### What we did
