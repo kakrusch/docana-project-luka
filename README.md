@@ -16,10 +16,9 @@
 
 # Project Title
 
-_Group members: Alex Weyhe, Kascha Kruschwitz, Ludmila Bajuk
+Group members: Alex Weyhe, Kascha Kruschwitz, Ludmila Bajuk
 
-## Introduction
-
+## Introduction (Background)
 Start off by setting the stage for your project. Give a brief overview of relevant studies or work that have tackled similar issues. Then, clearly describe the main question or problem your project is designed to solve.
 
 ### Research Questions
@@ -30,26 +29,23 @@ Start off by setting the stage for your project. Give a brief overview of releva
 Hypothesis:
 - we expect differences 
 
-## Background 
-- literature on different uses of ok
-- different word senses
+
 
 
 #### What we did
- - count post number to pick corpora
- - extract explatives using POS tagger: adjust research question to OK
 
+ 
 
 ## Dataset
-
+The dataset used is
 Provide a short description of the dataset used in your project. Focus on highlighting the aspects that are particularly relevant to your work.
 what parts of the datas set we used and why 
-
+ - count post number to pick corpora
 
 
 ## METHODS
 
-### prepocessing
+### Prepocessing
 
 ### Model Setup 
 
@@ -66,18 +62,22 @@ Include a `requirements.txt` file in your project repository. This file should l
 pip install -r requirements.txt
 ```
 
-```
-print("hellos woerld")
-```
 
 ### comparison metrics
 
 Report how you conducted the experiments. We suggest including detailed explanations of the preprocessing steps and model training in your project. For the preprocessing, describe  data cleaning, normalization, or transformation steps you applied to prepare the dataset, along with the reasons for choosing these methods. In the section on model training, explain the methodologies and algorithms you used, detail the parameter settings and training protocols, and describe any measures taken to ensure the validity of the models.
 
 #### words senses 
+
 #### cosine similarity 
+
+
 #### overlapping words
+
+
 #### sentiment analysis 
+Finally, a sentiment analysis based on the 50 most similar words for each OK in each subreddit was conducted.
+
 
 ## Results and Discussion
 - wordsense - lesk
