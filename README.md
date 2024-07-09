@@ -58,7 +58,13 @@ Adegbija and Bello, 2019
 
 #### What we did
 
-
+## preprocessing and model building
+1. got the 4 largest subreddits and put it in a dataframe to access it better and save it in a csv file so that we didnt have to load the data every time
+2. then, we costum tokenize the subreddits. We removed the punctuation for all tokens except for the O.K and make every lower except for Ok and O.K
+3. we got all the oks in each subreddits and got a list of all the oks that appeared in every single subreddit.
+4. We built a skipgram word3vec model and we built a model for each subredit and save it to be easily loaded whenever we needed it.
+5. With the model we check the 100 most similar words for each ok in each subreddit, the most frequent oks in each and the vector representation of each ok
+6. we analysis the different version of ok with 4 comparison metrics.
 ## Dataset
 The dataset used is 
 
