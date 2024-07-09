@@ -60,7 +60,10 @@ Nigerian uses:
  
 
 ## Dataset
-The dataset used is
+The dataset used is 
+
+https://aclanthology.org/W17-4508.pdf
+
 Provide a short description of the dataset used in your project. Focus on highlighting the aspects that are particularly relevant to your work.
 what parts of the datas set we used and why 
  - count post number to pick corpora
