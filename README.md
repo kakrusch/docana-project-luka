@@ -78,7 +78,7 @@ Report how you conducted the experiments. We suggest including detailed explanat
 #### sentiment analysis 
 Finally, a sentiment analysis based on the 50 most similar words for each OK in each subreddit was conducted.
 
-![Graph of the Sentiment](/figures/sent-all-okays.png)   ![Graph of the Sentiment](/figures/sent-all-okays.png)
+![Graph of the Sentiment](/figures/sent-all-okays.png = 50%)   ![Graph of the Sentiment](/figures/sent-all-okays.png)
 
 
 ## Results and Discussion
