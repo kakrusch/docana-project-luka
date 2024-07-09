@@ -75,11 +75,16 @@ Report how you conducted the experiments. We suggest including detailed explanat
 #### overlapping words
 
 
-#### sentiment analysis 
-Finally, a sentiment analysis based on the 50 most similar words for each OK in each subreddit was conducted.
+#### Sentiment analysis 
+Finally, sentiment analysis was conducted based on the 50 most similar words for each OK in each subreddit, using a lexicon provided in the VADER sentiment analyzer (Hutto & Gilbert, 2014). This lexicon included human-rated sentiments for many words specific to social media discourse and was thus deemed well-suited for the task of calculating the sentiments on Reddit. 
 
+| ![Graph of the Sentiments of okays across subreddits](/figures/Sentiment of different okays across subreddits.png)  | ![Graph of the Sentiments of all subreddits expressed by ok](/figures/sent all okays.png) |
+hsgdkj
 | ![Graph of the Sentiments of okays in AskReddit](/figures/Sentiment of different okays in AskReddit.png)  | ![Graph of the Sentiments of okays in League of Legends](/figures/Sentiment of different okays in League of Legends.png) |
 | ![Graph of the Sentiments of okays in Relationships](/figures/Sentiment of different okays in Relationships.png)  | ![Graph of the Sentiments of okays in TIFU](/figures/Sentiment of different okays in TIFU.png) |
+
+
+
 
 ## Results and Discussion
 - wordsense - lesk
@@ -106,4 +111,6 @@ Summarize the major outcomes of your project, reflect on the research findings, 
 ## References
 
 Include a list of academic and professional sources you cited in your report, using an appropriate citation format to ensure clarity and proper attribution.
+
+Hutto, C.J. & Gilbert, E.E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.
 
