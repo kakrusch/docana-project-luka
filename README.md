@@ -21,6 +21,10 @@ Group members: Alex Weyhe, Kascha Kruschwitz, Ludmila Bajuk
 ## Introduction (Background)
 Start off by setting the stage for your project. Give a brief overview of relevant studies or work that have tackled similar issues. Then, clearly describe the main question or problem your project is designed to solve.
 
+                                       FEEL FREE TO CHANGE EVERYTHING YOU WANT
+
+In spoken language the word “ok” is uttered frequently and can appear in different contexts. Multiple studies have investigated in what different ways the word is used in English and other languages. According to Burchifield (1982), the word “okay” can appear as a response or phrase to show acceptance or agreement. Additionally, it can be classified as an adjective to mean “correct”, good”, or “satisfactory. Condon (1986) introduces “okey” as a marker of transitions in discourse. Finally, in another study by Adegbija & Bello (2001), the usage of “O.K.” was investigated in Nigerian English and compared to (“Standard”) English. In Nigerian English it can be used as a gap filler, surprise, or discourse termination. [better transition needed]Here, the question comes to mind if one uses the word in the same contexts in written language. Consequently, the focus of this project is to investigate the different usage of “ok” in written language, in particular in online forums. The peculiarity in written language arises from the different spelling variations of the word – as it can be seen by the different spellings in the preceding sentences. Thus, this project investigates whether various spelling forms are used differently in written language and answers the research question: In how far do variations of the word “ok” differ in their usage in online forums. 
+
 ### Research Questions
 - Is the meaning of OK and its variations always the same?
    - Are the different spellings associated with different uses, meanings etc...?
