@@ -88,6 +88,7 @@ For this project, we used the “webis/tldr-17” dataset from Hugging Face. A s
     -   trained on entire content of each subreddit for words appearing more than 5 times
     -   vector size of 100
 5. With the model we check the 100 most similar words for each ok in each subreddit, the most frequent oks in each and the vector representation of each ok
+    - (include list for each sub and each ok?)
 6. we analysis the different version of ok with 4 comparison metrics.
 
 
@@ -192,9 +193,10 @@ Within subreddits: tifu all positive, in other subreddits O.K is generally negat
                - different cosine similarity in each subreddit
                - overall very low across subreddit similarity
                - very negative in Askreddit but positive in all others
-   
-         - the standard spellings "okay", "ok" and "Ok" are semantically similar a
-         - cosine similarity distributions in TIFU and AskReddit most similar - consistent with having the most similar uses
+         - O.K.:
+             - consistently most negative (except in TIFU)   
+    - cosine similarity distributions in TIFU and AskReddit most similar - consistent with having the most similar uses
+    - league of legends uses ok-variations differently to others (eg. more negative sentiment overall)- consistent with having the most different topic
 
   
 - wordsense - lesk
