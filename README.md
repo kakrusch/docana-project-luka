@@ -33,33 +33,6 @@ In spoken language the word “ok” is uttered frequently and can appear in dif
 Hypothesis:
 From the project we expect to see differences in the usage of the word "ok" and its different spellings across subreddits.
 
-literature 
-
-
-
-- Condon (1986 in Lee, 2008): verbal okay has 3 pragmatic uses in decision-making interaction
-   - the beginning of the entire discourse.
-   - the transition from a non-decision sequence frame to a decision discourse
-   - the transition from one decision sequence to the next
-   - Marker of transition
-- Beach (1993 in Lee, 2008):
-   - free-standing receipt marker
-   - Again marker of discourse transitions
-
-
-- Burchfield (1982 in Adegbija & Bello, 2019) - american english (? - could be british)
-     1. Adjective uses: “correct,' `all right,' `satisfactory,'`good,' `well,' `everything is in order,' or `in good health
-     2.  Phrase: “acceptable to me”
-     3.  Response particle like “yes” or “certainly”
-     4.  “signal social or cultural acceptance, being fashionable, having or showing prestige, belonging to a high class”
-     5.  Transitive Verbs
-- Nigerian uses (Adegbija and Bello, 2019):
-     1. OK as a gap filler
-     2. Expressing a sense of surprise
-     3. As a marker of discourse termination “stop it!”
- 
-
-
 ## Dataset
 The dataset used is 
 
@@ -253,6 +226,10 @@ Summarize the major outcomes of your project, reflect on the research findings, 
 ## References
 
 Include a list of academic and professional sources you cited in your report, using an appropriate citation format to ensure clarity and proper attribution.
+
+Beach, Wayne A.(1993). Transitional regularities for ‘casual’ "Okay" usages. Journal of Pragmatics, vol. 19, no. 4, pp. 325-352. https://doi.org/10.1016/0378-2166(93)90092-4
+
+Condon, Sherri L. (1986). The discourse functions of OK. Semiotica, vol. 60, no. 1-2, pp. 73-102. https://doi.org/10.1515/semi.1986.60.1-2.73
 
 Hutto, C.J. & Gilbert, E.E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.
 
