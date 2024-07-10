@@ -121,6 +121,46 @@ pip install -r requirements.txt
 Report how you conducted the experiments. We suggest including detailed explanations of the preprocessing steps and model training in your project. For the preprocessing, describe  data cleaning, normalization, or transformation steps you applied to prepare the dataset, along with the reasons for choosing these methods. In the section on model training, explain the methodologies and algorithms you used, detail the parameter settings and training protocols, and describe any measures taken to ensure the validity of the models.
 
 ### Word Senses 
+The idea was to find out the different word senses for the different spellings of okay and then see whether the subreddits yield different results. In a first step, we used the nltk library and the built-in wordnet function to see all possible definitions for the different versions of “ok”. This gave us the following results: 
+
+WordNet definitions for ok
+definition 0: a state in south central United States
+definition 1: an endorsement
+definition 2: being satisfactory or in satisfactory condition
+definition 3: an expression of agreement normally occurring at the beginning of a sentence
+_____________________________________________________________________
+WordNet definitions for okay
+definition 0: an endorsement
+definition 1: give sanction to
+definition 2: being satisfactory or in satisfactory condition
+definition 3: in a satisfactory or adequate manner; ; ; (`alright' is a nonstandard variant of `all right')
+_____________________________________________________________________
+WordNet definitions for Ok
+definition 0: a state in south central United States
+definition 1: an endorsement
+definition 2: being satisfactory or in satisfactory condition
+definition 3: an expression of agreement normally occurring at the beginning of a sentence
+_____________________________________________________________________
+WordNet definitions for O.K.
+definition 0: an endorsement
+definition 1: give sanction to
+definition 2: being satisfactory or in satisfactory condition
+definition 3: in a satisfactory or adequate manner; ; ; (`alright' is a nonstandard variant of `all right')
+_____________________________________________________________________
+WordNet definitions for k
+definition 0: the basic unit of thermodynamic temperature adopted under the Systeme International d'Unites
+definition 1: a light soft silver-white metallic element of the alkali metal group; oxidizes rapidly in air and reacts violently with water; is abundant in nature in combined forms occurring in sea water and in carnallite and kainite and sylvite
+definition 2: the cardinal number that is the product of 10 and 100
+definition 3: a unit of information equal to 1000 bytes
+definition 4: a unit of information equal to 1024 bytes
+definition 5: the 11th letter of the Roman alphabet
+definition 6: street names for ketamine
+definition 7: denoting a quantity consisting of 1,000 items or units
+_____________________________________________________________________
+WordNet definitions for okey
+definition 0: an endorsement
+
+In the next step we employed the Lesk algorithm to find out the definition of for each variation of ok based on its most similar words across subreddits. To briefly lay out what the Lesk algorithm does, it takes an input word and a sentence in which a word appears in and then finds the overlapping words from the sentence in each gloss of the target word. The gloss with the most matches will be put out as the definition. Unfortunately, in our case it did not yield any results and the definition for each variation of “ok” was the same in each subreddit. We then tried to see how many of the most similar words for each “ok” overlapped with the glosses in all subreddits. We found out that only for the word “okay” there was one match each for all subreddits. All other variations of “ok” across the subreddits had zero matches.
 
 ### Cosine Similarity 
 
