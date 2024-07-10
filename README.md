@@ -73,23 +73,27 @@ For this project, we used the “webis/tldr-17” dataset from Hugging Face whic
 
 - we used the "content" part only (not including the tldr) to train the model
 
-  
-## METHODS
+## Methods
 
-1. got the 4 largest subreddits and put it in a dataframe to access it better and save it in a csv file so that we didnt have to load the data every time
+### Prepocessing
+
+1. We got the 4 largest subreddits in the dataset and put it in a dataframe using panda to access it better during the analysis. We saved it in a csv file so that it did not have to be loaded the data every time. 
     - AskReddit, League of Legends, Relationships, TIFU
-2. then, we custom tokenize the subreddits. We removed the punctuation for all tokens except for the O.K and made every lower except for Ok and O.K
-        - for the verisions of ok case and punctuation matters: Ok vs ok vs O.K., but for other words it introduced too much noise
-3. we got all the oks in each subreddits and got a list of all the oks that appeared in every single subreddit (more than 5 times to generate mostly good embeddings).
+      
+2.  We custom tokenized each subreddit using NLTK and regular expressions for the exceptions. Punctuation was removed for all tokens except for 'O.K' and lowered all tokens except for 'Ok' and 'O.K'.
+        - For the versions of 'ok' case and punctuation matters: Ok vs ok vs O.K., but for other words it introduced too much noise.
+    
+3. We got all the OKs in each subreddits and got a list of all the oks that appeared in every single subreddit (more than 5 times to generate mostly good embeddings).
     - 'okay', 'ok', 'Ok', 'O.K', 'okey', 'k'
-4. We built a skipgram word2vec model and trained a model for each subredit and save it to be easily loaded whenever we needed it.
-    -   trained on entire content of each subreddit for words appearing more than 5 times
-    -   vector size of 100
-5. With the model we check the 100 most similar words for each ok in each subreddit, the most frequent oks in each and the vector representation of each ok
-    - (include list for each sub and each ok?)
-6. we analysis the different version of ok with 4 comparison metrics.
-7. 
 
+### Model Setup 
+
+4. We built a skipgram word2vec model using Gensim, and trained a model for each subredit and save it to be easily loaded whenever we needed it.
+    -   The model was trained on the entire content of each subreddit for words appearing more than 5 times.
+    -   Vector size of 100
+      
+5. With the model we checked the 100 most similar words for each OK in each subreddit, the most frequent OKs in each and the vector representation of each OK.
+      
 
 | Subreddit  | Words in Common from 10 most similar      |
 |----------------|-----------------------------------------|
@@ -122,17 +126,8 @@ For this project, we used the “webis/tldr-17” dataset from Hugging Face whic
 |                | k: ['john', 'j', 'jane', 'h', 'sarah']               | 
 
 
+6. We analysed the different version of OK with 4 comparison metrics.
 
-
-
-
-
-
-### Prepocessing
-
-
-
-### Model Setup 
 
 Outline the tools, software, and hardware environment, along with configurations used for conducting your experiments. Be sure to document the Python version and other dependencies clearly. Provide step-by-step instructions on how to recreate your environment, ensuring anyone can replicate your setup with ease:
 
