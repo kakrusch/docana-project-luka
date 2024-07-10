@@ -1,9 +1,8 @@
 
 ## Setup The Report Template
 
--  Add all your code, such as Python scripts and Jupyter notebooks, to the `code` folder. Use markdown files for your project report. [Here](https://docs.gitlab.com/ee/user/markdown.html) you can read about how to format Markdown documents. 
+1.  Add all your code, such as Python scripts and Jupyter notebooks, to the `code` folder. Use markdown files for your project report. [Here](https://docs.gitlab.com/ee/user/markdown.html) you can read about how to format Markdown documents. 
 
-1
 2. **Configure GitHub Pages:** Navigate to `Settings` -> `Pages` in your newly forked repository. Under the `Branch` section, change from `None` to `master` and then click `Save`.
 
 3. **Customize Configuration:** Modify the `_config.yml` file within your repository to personalize your site. Update the `title:` to reflect the title of your project and adjust the `description:` to provide a brief summary.
@@ -76,8 +75,6 @@ For this project, we used the “webis/tldr-17” dataset from Hugging Face. A s
   
 ## METHODS
 
-## preprocessing and model building
-
 1. got the 4 largest subreddits and put it in a dataframe to access it better and save it in a csv file so that we didnt have to load the data every time
     - AskReddit, League of Legends, Relationships, TIFU
 2. then, we custom tokenize the subreddits. We removed the punctuation for all tokens except for the O.K and made every lower except for Ok and O.K
@@ -90,6 +87,23 @@ For this project, we used the “webis/tldr-17” dataset from Hugging Face. A s
 5. With the model we check the 100 most similar words for each ok in each subreddit, the most frequent oks in each and the vector representation of each ok
     - (include list for each sub and each ok?)
 6. we analysis the different version of ok with 4 comparison metrics.
+7. 
+
+| Subreddit  || Words in Common from 10 most similar      |
+|----------------||-----------------------------------------|
+| 'okay'         || ['ok', 'alright', 'fine', 'yeah', 'yea']  |                                                       
+| 'ok'           || ['okay', 'fine', 'alright']               |
+| 'Ok'           ||['yeah', 'hey']                            |
+| 'O.K'          || []                                        |
+| 'okey'         || []                                        | 
+| 'k'            || []                                        |
+
+
+
+Askreddit: {'okay': ['alright', 'fine', 'allright', 'mhm'], 'ok': ['alright', 'fine', 'allright', 'mhm'], 'Ok': ['yeah', 'uh', 'yea', 'mhm', 'ummmm'], 'O.K': ['poopie', 'yyes', 'mhmm', 'oughta', 'ummmmmm'], 'okey': ['thehealeroftri', 'dany', 'batcave', 'yeaaa', 'spotlighted'], 'k': ['j', 'c', 'g', 'b', 'p']}
+League of Legends {'okay': ['alright', 'yeah', 'fine'], 'ok': ['alright', 'yeah', 'fine', 'yea'], 'Ok': ['yeah', 'hey', 'yea', 'welp'], 'O.K': ['autoloss', 'dammed', 'cartman', 'neato', 'apealing'], 'okey': ['yeah', 'idek', 'yeh', 'ahh', 'yea'], 'k': ['t1', 'sgw', 'lgim', 'telecom', 'starhorn']}
+TIFU {'okay': ['alright', 'fine', 'overreacting', 'yeah'], 'ok': ['alright', 'fine', 'yeah'], 'Ok': ['yeah', 'eh', 'yea', 'yrrah321'], 'O.K': ['poogadi', 'bluffing', 'excommunicated', 'rue', 'honoured'], 'okey': ['nooooope', 'fuuuuuuuuuuuuuck', 'neato', 'uhhuh', 'fuckfuckfuckfuckfuck'], 'k': ['h', 'j', 'kelly', 'linette', 'l']}
+Relationships {'okay': ['alright', 'fine', 'allright'], 'ok': ['fine', 'alright', 'allright'], 'Ok': ['yeah', 'thanksokay', 'hey', 'rr_a', 'alright'], 'O.K': ['concur', 'mutuals', 'tabled', 'sidekick', 'bullcrap'], 'okey': ['ahah', 'rehearsed', 'ehhhh', 'wha', 'noncommital'], 'k': ['john', 'j', 'jane', 'h', 'sarah']}
 
 
 
@@ -114,13 +128,13 @@ pip install -r requirements.txt
 ```
 
 
-### Comparison Metrics and Results
+## Comparison Metrics and Results
 
 Report how you conducted the experiments. We suggest including detailed explanations of the preprocessing steps and model training in your project. For the preprocessing, describe  data cleaning, normalization, or transformation steps you applied to prepare the dataset, along with the reasons for choosing these methods. In the section on model training, explain the methodologies and algorithms you used, detail the parameter settings and training protocols, and describe any measures taken to ensure the validity of the models.
 
-#### words senses 
+### words senses 
 
-#### cosine similarity 
+### cosine similarity 
 - within each subreddit we calculated the cosine similarity for each two Oks using Word2Vec's inbuilt metric
       - see how similar each two OKs are
 - plot the similarity using  "t-distributed Stochastic Neighbor Embedding" to visualize the distribution
@@ -134,7 +148,7 @@ Report how you conducted the experiments. We suggest including detailed explanat
 
 
 
-#### overlapping words
+### overlapping words
 
 A pairwise semantic similarity analysis was carried out to compare the overlapping most similar words of each OK and their corresponding similarity scores. For this analysis, we extracted the similar words of all OKs in two subreddits and compares only the overlapping words. We paired all the subreddit with each other obtaining 6 different pairs. In this case, the only OKs that had overlapping similar were 'ok', 'okay', and 'Ok'; 'k' only had similar overlapping words or letter with in a few pairs, however, they were not reliable since it was a one letter embedding.
 
@@ -158,7 +172,7 @@ After getting the mean score for each okay in each subreddit, we calculated the 
 | 'k'            | []                                        |
 
 
-#### Sentiment analysis 
+### Sentiment analysis 
 Finally, sentiment analysis was conducted based on the 50 most similar words for each OK in each subreddit, using a lexicon provided in the VADER sentiment analyzer (Hutto & Gilbert, 2014). This lexicon included human-rated sentiments for many words specific to social media discourse and was thus deemed well-suited for the task of calculating the sentiments on Reddit. 
 
 Across subreddits: “okay” and “ok” overall positive, others tending towards neutral
