@@ -81,6 +81,7 @@ For this project, we used the “webis/tldr-17” dataset from Hugging Face. A s
 1. got the 4 largest subreddits and put it in a dataframe to access it better and save it in a csv file so that we didnt have to load the data every time
     - AskReddit, League of Legends, Relationships, TIFU
 2. then, we custom tokenize the subreddits. We removed the punctuation for all tokens except for the O.K and made every lower except for Ok and O.K
+        - for the verisions of ok case and punctuation matters: Ok vs ok vs O.K., but for other words it introduced too much noise
 3. we got all the oks in each subreddits and got a list of all the oks that appeared in every single subreddit (more than 5 times to generate mostly good embeddings).
     - 'okay', 'ok', 'Ok', 'O.K', 'okey', 'k'
 4. We built a skipgram word2vec model and trained a model for each subredit and save it to be easily loaded whenever we needed it.
@@ -112,16 +113,25 @@ pip install -r requirements.txt
 ```
 
 
-### comparison metrics
+### Comparison Metrics and Results
 
 Report how you conducted the experiments. We suggest including detailed explanations of the preprocessing steps and model training in your project. For the preprocessing, describe  data cleaning, normalization, or transformation steps you applied to prepare the dataset, along with the reasons for choosing these methods. In the section on model training, explain the methodologies and algorithms you used, detail the parameter settings and training protocols, and describe any measures taken to ensure the validity of the models.
 
 #### words senses 
 
 #### cosine similarity 
+- within each subreddit we calculated the cosine similarity for each two Oks using Word2Vec's inbuilt metric
+      - see how similar each two OKs are
+- plot the similarity using  "t-distributed Stochastic Neighbor Embedding" to visualize the distribution
+      - shown below
+- Results:
+      - within all subreddits "okay - ok" have the most similar embeddings
+      - Askreddit and Tifu have most similar distribution
 
 | ![Graph of Cosine Similarity of OKs in Askreddit](/figures/ok_askred.png)  | ![Graph of Cosine Similarity of OKs in League of Legends](/figures/ok_lol.png) |
 | ![Graph of Cosine Similarity of OKs in Relationships](/figures/ok_relations.png)  | ![Graph of Cosine Similarity of OKs in TIFU](/figures/ok_tifu.png) |
+
+
 
 #### overlapping words
 
@@ -136,9 +146,8 @@ After getting the mean score for each okay in each subreddit, we calculated the 
 ![Word Overlapping Semantic Similarity](https://github.com/kakrusch/docana-project-luka/assets/162272922/5a572432-a872-4175-96e5-f51b15b836ae)
 
 
-{'okay': [], 'ok': [], : , : [], : [], : []}
 
-| Version of OK  | Words in common                           |
+| Version of OK  | Words in Common from 10 most similar      |
 |----------------|-----------------------------------------|
 | 'okay'         | ['ok', 'alright', 'fine', 'yeah', 'yea']  |                                                       
 | 'ok'           | ['okay', 'fine', 'alright']               |
@@ -166,7 +175,28 @@ Within subreddits: tifu all positive, in other subreddits O.K is generally negat
 
 
 
-## Results and Discussion
+## Discussion
+
+- Is the meaning of OK and its variations always the same?
+   - Are the different spellings associated with different uses, meanings etc...?
+   - Are there differences across topics/user types?
+ 
+  
+   -  the standard spellings "okay", "ok" and "Ok" seem to be mostly associated with the standard uses
+         -   consistent across subreddits
+         -  most similar to words like "alright", "fine", "yeah" and posititve sentiment associated with meanings like good)
+         -  like adjectival/response particle uses from spoken langugage uses
+   - "okey", "O.K" and "k" more unique
+         - "k" - not reliable embeddings
+         - "okey":
+               - different cosine similarity in each subreddit
+               - overall very low across subreddit similarity
+               - very negative in Askreddit but positive in all others
+   
+         - the standard spellings "okay", "ok" and "Ok" are semantically similar a
+         - cosine similarity distributions in TIFU and AskReddit most similar - consistent with having the most similar uses
+
+  
 - wordsense - lesk
 - sentiment - 
 - pairwise similarity of similar words within embedding: 3 very similar, 2 very different ('O.K', 'okey'), 'k' unreliable
