@@ -92,16 +92,12 @@ For this project, we used the “webis/tldr-17” dataset from Hugging Face. A s
 
 | Subreddit  | Words in Common from 10 most similar      |
 |----------------|-----------------------------------------|
-| 'Askreddit'    | 'okay': ['alright', 'fine', 'allright', 'mhm'], 
-
-'ok': ['alright', 'fine', 'allright', 'mhm'], 
-
-'Ok': ['yeah', 'uh', 'yea', 'mhm', 'ummmm'], 
-
-'O.K': ['poopie', 'yyes', 'mhmm', 'oughta', 'ummmmmm'], 
-
-'okey': ['thehealeroftri', 'dany', 'batcave', 'yeaaa', 'spotlighted'], 
-'k': ['j', 'c', 'g', 'b', 'p']  |     
+| *Askreddit*  | okay: | ['alright', 'fine', 'allright', 'mhm'] |
+|              | ok:  | ['alright', 'fine', 'allright', 'mhm'] |
+|              | 'Ok': ['yeah', 'uh', 'yea', 'mhm', 'ummmm'] |
+|              | 'O.K': ['poopie', 'yyes', 'mhmm', 'oughta', 'ummmmmm'] |
+|              | 'okey': ['thehealeroftri', 'dany', 'batcave', 'yeaaa', 'spotlighted'] |
+|              | 'k': ['j', 'c', 'g', 'b', 'p'] |     
 |                |                    | 
 |                |                    | 
 |                |                    | 
