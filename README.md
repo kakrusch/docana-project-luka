@@ -89,20 +89,32 @@ For this project, we used the “webis/tldr-17” dataset from Hugging Face. A s
 6. we analysis the different version of ok with 4 comparison metrics.
 7. 
 
-| Subreddit  || Words in Common from 10 most similar      |
-|----------------||-----------------------------------------|
-| 'okay'         || ['ok', 'alright', 'fine', 'yeah', 'yea']  |                                                       
-| 'ok'           || ['okay', 'fine', 'alright']               |
-| 'Ok'           ||['yeah', 'hey']                            |
-| 'O.K'          || []                                        |
-| 'okey'         || []                                        | 
-| 'k'            || []                                        |
+
+| Subreddit  | Words in Common from 10 most similar      |
+|----------------|-----------------------------------------|
+| 'Askreddit'    | 'okay': ['alright', 'fine', 'allright', 'mhm'], 
+
+'ok': ['alright', 'fine', 'allright', 'mhm'], 
+
+'Ok': ['yeah', 'uh', 'yea', 'mhm', 'ummmm'], 
+
+'O.K': ['poopie', 'yyes', 'mhmm', 'oughta', 'ummmmmm'], 
+
+'okey': ['thehealeroftri', 'dany', 'batcave', 'yeaaa', 'spotlighted'], 
+'k': ['j', 'c', 'g', 'b', 'p']  |     
+|                |                    | 
+|                |                    | 
+|                |                    | 
 
 
 
-Askreddit: {'okay': ['alright', 'fine', 'allright', 'mhm'], 'ok': ['alright', 'fine', 'allright', 'mhm'], 'Ok': ['yeah', 'uh', 'yea', 'mhm', 'ummmm'], 'O.K': ['poopie', 'yyes', 'mhmm', 'oughta', 'ummmmmm'], 'okey': ['thehealeroftri', 'dany', 'batcave', 'yeaaa', 'spotlighted'], 'k': ['j', 'c', 'g', 'b', 'p']}
+
+Askreddit: {}
+
 League of Legends {'okay': ['alright', 'yeah', 'fine'], 'ok': ['alright', 'yeah', 'fine', 'yea'], 'Ok': ['yeah', 'hey', 'yea', 'welp'], 'O.K': ['autoloss', 'dammed', 'cartman', 'neato', 'apealing'], 'okey': ['yeah', 'idek', 'yeh', 'ahh', 'yea'], 'k': ['t1', 'sgw', 'lgim', 'telecom', 'starhorn']}
+
 TIFU {'okay': ['alright', 'fine', 'overreacting', 'yeah'], 'ok': ['alright', 'fine', 'yeah'], 'Ok': ['yeah', 'eh', 'yea', 'yrrah321'], 'O.K': ['poogadi', 'bluffing', 'excommunicated', 'rue', 'honoured'], 'okey': ['nooooope', 'fuuuuuuuuuuuuuck', 'neato', 'uhhuh', 'fuckfuckfuckfuckfuck'], 'k': ['h', 'j', 'kelly', 'linette', 'l']}
+
 Relationships {'okay': ['alright', 'fine', 'allright'], 'ok': ['fine', 'alright', 'allright'], 'Ok': ['yeah', 'thanksokay', 'hey', 'rr_a', 'alright'], 'O.K': ['concur', 'mutuals', 'tabled', 'sidekick', 'bullcrap'], 'okey': ['ahah', 'rehearsed', 'ehhhh', 'wha', 'noncommital'], 'k': ['john', 'j', 'jane', 'h', 'sarah']}
 
 
