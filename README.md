@@ -123,8 +123,16 @@ Report how you conducted the experiments. We suggest including detailed explanat
 ### Word Senses 
 
 ### Cosine Similarity 
-- within each subreddit we calculated the cosine similarity for each two Oks using Word2Vec's inbuilt metric
-      - see how similar each two OKs are
+
+The cosine similarity analisys was conducted in order to, firstly, observe the similarity or dissimilarity of the different versions of OK in eachsubreddit. Therefore, within each subreddit we calculated the cosine similarity for each two Oks using Word2Vec's inbuilt metric. For example, 'ok' and 'O.K' similarity scores in the TIFU subreddit 
+
+--------------------
+tifu:  ok - O.K : 0.7133671
+askreddit:  ok - O.K : 0.7002533
+league of legends:  ok - O.K : 0.5627054
+relationships:  ok - O.K : 0.3847269
+--------------------
+
 - plot the similarity using  "t-distributed Stochastic Neighbor Embedding" to visualize the distribution
       - shown below
 - Results:
