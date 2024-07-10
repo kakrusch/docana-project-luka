@@ -177,6 +177,7 @@ get_most_similar_words(tifu_sim_ok, askreddit_sim_ok)
 we get the mean value of the scores we got from the first 6 words found in the 'okay' overlapping words list). 
 
 After getting the mean score for each okay in each subreddit, we calculated the final mean score of each OK across subreddits obtaining in that way the semantic similarity of the same OK in different contexts.
+
 ![Word Overlapping Semantic Similarity](https://github.com/kakrusch/docana-project-luka/assets/162272922/5a572432-a872-4175-96e5-f51b15b836ae)
 
 
