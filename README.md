@@ -83,19 +83,21 @@ def custom_tokenizer(raw_list):
     -   The model was trained on the entire content of each subreddit for words appearing more than 5 times.
     -   Vector size of 100
     -   code snippet?
+    -   skip-gram: so that from the versions of ok we can generate the most similar words
+    -   window size 5: allow 
       
-5. With the model we checked the 100 most similar words for each OK in each subreddit, the most frequent OKs in each and the vector representation of each OK.
 
 ```bash
 def skipgram_w2v_model(tokenized_content, model_name):
   skipgram_model = Word2Vec(vector_size=100, # size of 2D vector
- 			    window=5, #  distance between the current and predicted word
+ 			    window=5, # distance between the current and predicted word in each direction
  			    sg=1,  # Skip-Gram model
  			    min_count=5)  # Ignores all words with a total frequency lower than five 			
   skipgram_model.build_vocab(tokenized_content) # store all words in a vocabulary
   skipgram_model.train(tokenized_content, total_examples=skipgram_model.corpus_count, epochs=10)
 ```
 
+5. With the model we checked the 100 most similar words for each OK in each subreddit, the most frequent OKs in each and the vector representation of each OK.
 
 | Subreddit  | Words in Common from 10 most similar      |
 |----------------|-----------------------------------------|
