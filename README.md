@@ -67,7 +67,7 @@ pip install -r requirements.txt
 ### Prepocessing
 
 1. We got the 4 largest subreddits in the dataset and put it in a dataframe using panda to access it better during the analysis. We saved it in a csv file so that it did not have to be loaded the data every time. 
-    - AskReddit (first [:200000000] tokens, as the subreddit was much larger than all others), League of Legends, Relationships, TIFU
+    - AskReddit (first [:200000000] characters, as the subreddit was much larger than all others), League of Legends, Relationships, TIFU
       
 2.  We custom tokenized each subreddit using NLTK and regular expressions for the exceptions. Punctuation was removed for all tokens except for 'O.K' and lowered all tokens except for 'Ok' and 'O.K'.
         - For the versions of 'ok' case and punctuation matters: Ok vs ok vs O.K., but for other words it introduced too much noise.
