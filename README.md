@@ -85,7 +85,7 @@ def custom_tokenizer(raw_list):
   return tokenized
 ```
     
-4. We got all the OKs in each subreddits and got a list of all the oks that appeared in every single subreddit (more than 5 times to generate mostly good embeddings).
+3. We got all the OKs in each subreddits and got a list of all the oks that appeared in every single subreddit (more than 5 times to generate mostly good embeddings).
     - 'okay', 'ok', 'Ok', 'O.K', 'okey', 'k'
 
 ### Model Setup 
@@ -141,9 +141,11 @@ def skipgram_w2v_model(tokenized_content, model_name):
 |                | k: ['john', 'j', 'jane', 'h', 'sarah']               | 
 
 
-6. We analysed the different version of OK with 4 comparison metrics.
+
 
 ## Comparison Metrics and Results
+
+We analysed the different version of OK with 4 comparison metrics.
 
 ### Word Senses 
 The idea was to find out the different word senses for the different spellings of okay and then see whether the subreddits yield different results. In a first step, we used the nltk library and the built-in wordnet function to see all possible definitions for the different versions of “ok”. This gave us the following results: 
