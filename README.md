@@ -215,11 +215,7 @@ The cosine similarity analisys was conducted in order to, firstly, observe the s
 | relationships      | ok - O.K : 0.3847269   |
 
 
-- plot the similarity using  "t-distributed Stochastic Neighbor Embedding" to visualize the distribution
-
-- Results:
-      - within all subreddits "okay - ok" have the most similar embeddings
-      - Askreddit and Tifu have most similar distribution
+After obtaining the scores, we plotted the similarity using  "t-distributed Stochastic Neighbor Embedding" to visualize the distribution of each OK. The results exhibit that 'ok' and 'okay' have the most simmilar word embeddings within all subreddits. More so, we can conclude, as visualized in the graphs that Askreddit and TIFU have the most similar OK distribution. 
 
 | ![Graph of Cosine Similarity of OKs in Askreddit](/figures/ok_askred.png)  | ![Graph of Cosine Similarity of OKs in League of Legends](/figures/ok_lol.png) |
 | ![Graph of Cosine Similarity of OKs in Relationships](/figures/ok_relations.png)  | ![Graph of Cosine Similarity of OKs in TIFU](/figures/ok_tifu.png) |
