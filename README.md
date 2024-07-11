@@ -254,15 +254,17 @@ The results of the pairwise comparison grouped the OKs into the ones that actual
 ### Sentiment analysis 
 Finally, sentiment analysis was conducted based on the 50 nearest neighbors for each OK in each subreddit, using a lexicon provided by the VADER sentiment analyzer (Hutto & Gilbert, 2014). This lexicon included human-rated sentiments for many words specific to social media discourse and was thus deemed well-suited for the task of calculating the sentiments on Reddit. 50 nearest neighbors were used to match at least one similar word to a word in the provided lexicon but not generate words that are too dissimilar. This resulted in all words having at least one match, except for "k" in the League of Legends subreddit. The average number of matched words was 4.76, with disproportionately many matches for 'okay' and 'ok'. We then plotted the results.
 
-
-
-Across subreddits: “okay” and “ok” overall positive, others tending towards neutral, O.K is generally negative, 
-
+First, the sentiment across subreddits was compared. `okay` and `ok` most consistently reflect a very positive sentiment, whereas all other words either are on the border too or are themselves neutral. Further, the version `O.K` and the uses of ok in the League of Legends subreddit seemed to express a more neutral or negative sentiment.
 
 | ![Graph of the Sentiments of okays across subreddits](/figures/Sentiment of different okays across subreddits.png)  | ![Graph of the Sentiments of all subreddits expressed by ok](/figures/sent-all-okays.png) |
 
 
-Within subreddits: League overall negative, tifu all positive and in other subreddits 
+Within subreddits, the patterns observed above are confirmed. TIFU expresses the most positive sentiment, because all versions of OK express a positive sentiment. In Askreddit, Relationships and TIFU, "okay", "Ok", "ok" and "k" all express positive sentiment. Of these, only "okay" is positive in League of Legends, which otherwise displays a markedly different pattern than the other subreddits, with 'okay' being neutral and 'Ok' very negative.
+
+
+- okey: positive in all except AskReddit (where its the most negative)
+- O.K.: negative in all except TIFU
+
 
 
 | ![Graph of the Sentiments of okays in AskReddit](/figures/Sentiment of different okays in AskReddit.png)  | ![Graph of the Sentiments of okays in League of Legends](/figures/Sentiment of different okays in League of Legends.png) |
@@ -294,7 +296,8 @@ Analysing the results provided by every metric employed, we can deduce that the 
          - consistently most negative (except in TIFU)   
 - cosine similarity distributions in TIFU and AskReddit most similar
       - consistent with having the most similar uses
-      - league of legends uses ok-variations differently to others (eg. more negative sentiment overall)- consistent with having the most different topic
+      - league of legends uses ok-variations differently to others (eg. more negative sentiment overall)
+          - consistent with having the most different topic
 
   
 - wordsense - lesk
