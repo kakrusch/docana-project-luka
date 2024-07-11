@@ -245,7 +245,7 @@ For each pair we got the mean semantic similarity for each similar and overlappi
  
 we get the mean value of the scores we got from the first 6 words found in the 'okay' overlapping words list). After getting the mean score for each 'OK' in each subreddit, we calculated the final mean score of each OK across subreddits obtaining, in that way, the semantic similarity of the same 'OK' in different contexts. 
 
-The results 
+The results of the pairwise comparison grouped the OKs into the ones that actually had overlapping similar words, and the ones that did not. On the one hand, the variations 'ok', 'okay' and 'Ok' had an approximate of 80% of semantic similarity accross subreddits. More so, for the word 'k' a percentage of around 80 is shown, however, these results are not accurate since the similar common words for 'k' were mainly aisolated letters or proper people's names. This may account for the fact that 'k' is also an sigle letter, and therefore, quiet unrelieable. The matching to the proper names could be the consequence of simplifying names into nicknames of only one letter, for instances, 'Kim' = 'k'. On the other hand, the words 'O.K' and 'okey' presented no comparable overlapping word neighbours, resulting into an dissimilar semantic relation.
 
 ![Word Overlapping Semantic Similarity](https://github.com/kakrusch/docana-project-luka/assets/162272922/5a572432-a872-4175-96e5-f51b15b836ae)
 
