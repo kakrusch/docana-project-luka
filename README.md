@@ -274,12 +274,15 @@ Within subreddits: League overall negative, tifu all positive and in other subre
 - Is the meaning of OK and its variations always the same?
    - Are the different spellings associated with different uses, meanings etc...?
    - Are there differences across topics/user types?
- 
-  
+   - 
+Analysing the results provided by every metric employed, we can deduce that the standard spellings "okay", "ok" and "Ok" seem to be mostly associated with the standard uses, such as adjectival or response particle, which are used similarly to how OK is used in spoken language. Apart from being consistent across subreddits, the nearest neighbours of these three versions of OK displayed a high percentage of the similar words, theses meainly being words like 'alright', 'fine', and 'yea'. One comparable feature from these words is that they denote a positive sentiment associated with meanings like 'good'. 
+    
 -  the standard spellings "okay", "ok" and "Ok" seem to be mostly associated with the standard uses
     -   consistent across subreddits
     -  most similar to words like "alright", "fine", "yeah" and posititve sentiment associated with meanings like good)
     -  like adjectival/response particle uses from spoken langugage uses
+ 
+  
 - "okey", "O.K" and "k" more unique: likely neither have reliable embeddings
      - "k" - definitely not reliable embeddings (likely also match other uses of the letter, eg in names)
      - okey and O.K: match with words of uncertainty or insults
