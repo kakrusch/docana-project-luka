@@ -246,26 +246,20 @@ For each pair we got the mean semantic similarity for each similar and overlappi
  
 we get the mean value of the scores we got from the first 6 words found in the 'okay' overlapping words list). After getting the mean score for each 'OK' in each subreddit, we calculated the final mean score of each OK across subreddits obtaining, in that way, the semantic similarity of the same 'OK' in different contexts. 
 
-The results of the pairwise comparison grouped the OKs into the ones that actually had overlapping similar words, and the ones that did not. On the one hand, the variations 'ok', 'okay' and 'Ok' had an approximate of 80% of semantic similarity accross subreddits. More so, for the word 'k' a percentage of around 80 is shown, however, these results are not accurate since the similar common words for 'k' were mainly aisolated letters or proper people's names. This may account for the fact that 'k' is also an sigle letter, and therefore, quiet unrelieable. The matching to the proper names could be the consequence of simplifying names into nicknames of only one letter, for instances, 'Kim' = 'k'. On the other hand, the words 'O.K' and 'okey' presented no comparable overlapping word neighbours, resulting into an dissimilar semantic relation.
+The results of the pairwise comparison grouped the OKs into the ones that actually had overlapping similar words, and the ones that did not. On the one hand, the variations `ok`, `okay` and `Ok` had an approximate of 80% of semantic similarity accross subreddits. More so, for the word `k` a percentage of around 80 is shown, however, these results are not accurate since the similar common words for 'k' were mainly aisolated letters or proper people's names. This may account for the fact that 'k' is also an sigle letter, and therefore, quiet unrelieable. The matching to the proper names could be the consequence of simplifying names into nicknames of only one letter, for instances, `Kim` = `k`. On the other hand, the words `O.K` and `okey` presented no comparable overlapping word neighbours, resulting into an dissimilar semantic relation.
 
 ![Word Overlapping Semantic Similarity](https://github.com/kakrusch/docana-project-luka/assets/162272922/5a572432-a872-4175-96e5-f51b15b836ae)
 
 
 ### Sentiment analysis 
-Finally, sentiment analysis was conducted based on the 50 nearest neighbors for each OK in each subreddit, using a lexicon provided by the VADER sentiment analyzer (Hutto & Gilbert, 2014). This lexicon included human-rated sentiments for many words specific to social media discourse and was thus deemed well-suited for the task of calculating the sentiments on Reddit. 50 nearest neighbors were used to match at least one similar word to a word in the provided lexicon but not generate words that are too dissimilar. This resulted in all words having at least one match, except for "k" in the League of Legends subreddit. The average number of matched words was 4.76, with disproportionately many matches for 'okay' and 'ok'. We then plotted the results.
+Finally, sentiment analysis was conducted based on the 50 nearest neighbors for each OK in each subreddit, using a lexicon provided by the VADER sentiment analyzer (Hutto & Gilbert, 2014). This lexicon included human-rated sentiments for many words specific to social media discourse and was thus deemed well-suited for the task of calculating the sentiments on Reddit. 50 nearest neighbors were used to match at least one similar word to a word in the provided lexicon but not generate words that are too dissimilar. This resulted in all words having at least one match, except for `k` in the League of Legends subreddit. The average number of matched words was 4.76, with disproportionately many matches for `okay` and `ok`. We then plotted the results.
 
 First, the sentiment across subreddits was compared. `okay` and `ok` most consistently reflect a very positive sentiment, whereas all other words either are on the border too or are themselves neutral. Further, the version `O.K` and the uses of ok in the League of Legends subreddit seemed to express a more neutral or negative sentiment.
 
 | ![Graph of the Sentiments of okays across subreddits](/figures/Sentiment of different okays across subreddits.png)  | ![Graph of the Sentiments of all subreddits expressed by ok](/figures/sent-all-okays.png) |
 
 
-Within subreddits, the patterns observed above are confirmed. TIFU expresses the most positive sentiment, because all versions of OK express a positive sentiment. In Askreddit, Relationships and TIFU, `okay`, `Ok`, `ok` and `k` all express positive sentiment. Of these, only `okay` is positive in League of Legends, which otherwise displays a markedly different pattern than the other subreddits, with `okay` being neutral and `Ok` very negative.
-
-
-- okey: positive in all except AskReddit (where its the most negative)
-- O.K.: negative in all except TIFU
-
-
+Within subreddits, the patterns observed above are confirmed. TIFU expresses the most positive sentiment, because all versions of OK express a positive sentiment. In Askreddit, Relationships and TIFU, `okay`, `Ok`, `ok` and `k` all express positive sentiment. Of these, only `okay` is positive in League of Legends, which otherwise displays a markedly different pattern than the other subreddits, with `okay` being neutral and `Ok` very negative. `okey` and `O.K` display similar patterns, in that their sentiment is different in one out of the four subreddits. `okey` is overall positive, except in AskReddit, where it is the most negative version. `O.K` shows the opposite pattern, being consistently negative except in TIFU, where, like all other spellings, it has a positive sentiment.
 
 | ![Graph of the Sentiments of okays in AskReddit](/figures/Sentiment of different okays in AskReddit.png)  | ![Graph of the Sentiments of okays in League of Legends](/figures/Sentiment of different okays in League of Legends.png) |
 | ![Graph of the Sentiments of okays in Relationships](/figures/Sentiment of different okays in Relationships.png)  | ![Graph of the Sentiments of okays in TIFU](/figures/Sentiment of different okays in TIFU.png) |
@@ -299,33 +293,23 @@ Analysing the results provided by every metric employed, we can deduce that the 
       - league of legends uses ok-variations differently to others (eg. more negative sentiment overall)
           - consistent with having the most different topic
 
-  
-- wordsense - lesk
-- sentiment - 
-- pairwise similarity of similar words within embedding: 3 very similar, 2 very different ('O.K', 'okey'), 'k' unreliable
-- cosine similarity of OKs within subbreddit - 
 
-
-
-Present the findings from your experiments, supported by visual or statistical evidence. Discuss how these results address your main research question.
 
 ***
 
-## Contributions
+## Individual Contributions
 
 | Team Member           | Contributions                                             |
 |-----------------------|-----------------------------------------------------------|
-| Alex Weyhe            | Data collection, preprocessing, model training, evaluation|                                                       
-| Kascha Kruschwitz     | ... hello                                                 |
-| Ludmila Bajuk         | ...  :)                                                   |
+| Alex Weyhe            | Lesk Algorithm, graph design                              |                                                       
+| Kascha Kruschwitz     | Data preprocessing, Sentiment Analysis                    |
+| Ludmila Bajuk         | Word2Vec model, pairwise similarity   :)                  |
 
 ## References
 
-https://www.geeksforgeeks.org/word-embeddings-in-nlp/
+Smetanin, S. (2018, November 16). Google News and Leo Tolstoy: Visualizing word2vec word embeddings with T-Sne. Medium. https://towardsdatascience.com/google-news-and-leo-tolstoy-visualizing-word2vec-word-embeddings-with-t-sne-11558d8bd4d 
 
-https://colab.research.google.com/drive/1NIF8k_bomrd6ELT9TDjOE7eZUfQaYBhp
-
-https://towardsdatascience.com/google-news-and-leo-tolstoy-visualizing-word2vec-word-embeddings-with-t-sne-11558d8bd4d
+Word embeddings in NLP. GeeksforGeeks. (2024, January 5). https://www.geeksforgeeks.org/word-embeddings-in-nlp/ 
 
 Beach, Wayne A.(1993). Transitional regularities for ‘casual’ "Okay" usages. Journal of Pragmatics, vol. 19, no. 4, pp. 325-352. https://doi.org/10.1016/0378-2166(93)90092-4
 
