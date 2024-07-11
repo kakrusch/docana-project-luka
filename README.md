@@ -241,11 +241,11 @@ We paired all the subreddits with each other obtaining 6 different pairs. In thi
 For each pair we got the mean semantic similarity for each similar and overlapping word for each 'OK', so that we got now one score for each word in the list of overlaping words. Once every word had only one score, we averaged those scores (in the case of pair1, for example: 
 
       pair1 = get_most_similar_words(tifu_sim_ok, askreddit_sim_ok)
-      {'okay': ['ok', 'alright', 'fine', 'allright', 'yeah', 'O.K', 'yea']
+      {'okay': ['ok', 'alright', 'fine', 'allright', 'yeah', 'O.K', 'yea']}
  
-we get the mean value of the scores we got from the first 6 words found in the 'okay' overlapping words list). 
+we get the mean value of the scores we got from the first 6 words found in the 'okay' overlapping words list). After getting the mean score for each 'OK' in each subreddit, we calculated the final mean score of each OK across subreddits obtaining, in that way, the semantic similarity of the same 'OK' in different contexts. 
 
-After getting the mean score for each 'OK' in each subreddit, we calculated the final mean score of each OK across subreddits obtaining, in that way, the semantic similarity of the same 'OK' in different contexts.
+The results 
 
 ![Word Overlapping Semantic Similarity](https://github.com/kakrusch/docana-project-luka/assets/162272922/5a572432-a872-4175-96e5-f51b15b836ae)
 
