@@ -36,13 +36,13 @@ From the project we expect to see differences in the usage of the word "ok" and 
 ## Dataset
 The dataset used is 
 
-https://aclanthology.org/W17-4508.pdf
+https://aclanthology.org/W17-4508.pdf - (Völske et al., 2017)
 
 Provide a short description of the dataset used in your project. Focus on highlighting the aspects that are particularly relevant to your work.
 what parts of the datas set we used and why 
  - count post number to pick corpora
 
-For this project, we used the “webis/tldr-17” dataset from Hugging Face which can be found here: https://huggingface.co/datasets/webis/tldr-17. A special feature of this dataset is that it only contains Reddit posts with the abbreviation “tl;dr”. This stands for “too long; didn’t read” and has become a popular tool for authors from Reddit posts to give a short summary of their posts’ contents. The dataset consists of 3,848,330 posts across a total of 29651 subreddits. Each data point contains the following data fields: author, body, normalizedBody, subreddit, subreddit_id, id, content summary. For our work the different subreddits are of particular interest because we want to compare our research question across them. Additionally, since we used posts from the four biggest subreddits, it was necessary that for each post its subreddit is specified. 
+For this project, we used the “webis/tldr-17” dataset (Völske et al., 2017) from Hugging Face which can be found here: https://huggingface.co/datasets/webis/tldr-17. A special feature of this dataset is that it only contains Reddit posts with the abbreviation “tl;dr”. This stands for “too long; didn’t read” and has become a popular tool for authors from Reddit posts to give a short summary of their posts’ contents. The dataset consists of 3,848,330 posts across a total of 29651 subreddits. Each data point contains the following data fields: author, body, normalizedBody, subreddit, subreddit_id, id, content summary. For our work the different subreddits are of particular interest because we want to compare our research question across them. Additionally, since we used posts from the four biggest subreddits, it was necessary that for each post its subreddit is specified. 
 
 - we used the "content" part only (not including the tldr) to train the model
 
@@ -341,7 +341,13 @@ Summarize the major outcomes of your project, reflect on the research findings, 
 
 ## References
 
-Include a list of academic and professional sources you cited in your report, using an appropriate citation format to ensure clarity and proper attribution.
+-lesk??
+
+https://www.geeksforgeeks.org/word-embeddings-in-nlp/
+
+https://colab.research.google.com/drive/1NIF8k_bomrd6ELT9TDjOE7eZUfQaYBhp
+
+https://towardsdatascience.com/google-news-and-leo-tolstoy-visualizing-word2vec-word-embeddings-with-t-sne-11558d8bd4d
 
 Beach, Wayne A.(1993). Transitional regularities for ‘casual’ "Okay" usages. Journal of Pragmatics, vol. 19, no. 4, pp. 325-352. https://doi.org/10.1016/0378-2166(93)90092-4
 
@@ -354,6 +360,10 @@ Adegbija, E., & Bello, J. (2001). The semantics of ‘okay’(OK) in Nigerian En
 Lee, J. M. (2017). The multifunctional use of a discourse marker okay by Korean EFL teachers. 외국어교육연구 (Foreign Language Education Research), 21, 41-65.
 
 Völske, M., Potthast, M., Syed, S., & Stein, B. (2017, September). Tl; dr: Mining reddit to learn automatic summarization. In Proceedings of the Workshop on New Frontiers in Summarization (pp. 59-63).
+
+
+
+
 
 
 
