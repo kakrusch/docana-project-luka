@@ -48,6 +48,17 @@ For this project, we used the “webis/tldr-17” dataset (Völske et al., 2017)
 
 ## Methods
 
+
+Outline the tools, software, and hardware environment, along with configurations used for conducting your experiments. Be sure to document the Python version and other dependencies clearly. Provide step-by-step instructions on how to recreate your environment, ensuring anyone can replicate your setup with ease:
+
+
+Include a `requirements.txt` file in your project repository. This file should list all the Python libraries and their versions needed to run the project. Provide instructions on how to install these dependencies using pip, for example:
+
+```
+pip install -r requirements.txt
+```
+
+
 - done on google colab, so relevant sections need to be adapted (eg. mainly loading files)
     - requirements.txt in github, but we pip installed directly in the colab notebook
     - in case of using a different interface, remove these from the top of the two documents
@@ -132,19 +143,6 @@ def skipgram_w2v_model(tokenized_content, model_name):
 
 6. We analysed the different version of OK with 4 comparison metrics.
 
-
-Outline the tools, software, and hardware environment, along with configurations used for conducting your experiments. Be sure to document the Python version and other dependencies clearly. Provide step-by-step instructions on how to recreate your environment, ensuring anyone can replicate your setup with ease:
-
-```bash
-conda create --name myenv python=<version>
-conda activate myenv
-```
-
-Include a `requirements.txt` file in your project repository. This file should list all the Python libraries and their versions needed to run the project. Provide instructions on how to install these dependencies using pip, for example:
-
-```bash
-pip install -r requirements.txt
-```
 
 
 ## Comparison Metrics and Results
