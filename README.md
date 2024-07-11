@@ -204,7 +204,7 @@ definition 0: an endorsement
 
 ***
 
-In the next step, we employed the Lesk algorithm to find out the definition for each variation of "ok" based on its most similar words across subreddits. To briefly lay out what the Lesk algorithm does, it takes an input word and a sentence in which a word appears in and then finds the overlapping words from the sentence in each gloss of the target word. The gloss with the most matches will be put out as the definition. Unfortunately, in our case it did not yield any results and the definition for each variation of “ok” was the same in each subreddit. We then tried to see how many of the most similar words for each “ok” overlapped with the glosses in all subreddits. We found out that only for the word “okay” there was one match each for all subreddits. All other variations of “ok” across the subreddits had zero matches.
+In the next step, we employed the Lesk algorithm to find out the definition for each variation of "ok" based on its most similar words across subreddits. To briefly lay out what the Lesk algorithm does, it takes an input word and a sentence in which the given word appears in and then finds the overlapping words from the sentence in each gloss of the target word. The gloss with the most matches will be output as the definition. Unfortunately, in our case it did not yield any results and the definition for each variation of “ok” was the same in each subreddit. We then tried to see how many of the most similar words for each “ok” overlapped with the glosses in all subreddits. We found out that only for the word “okay” there was one match each for all subreddits. All other variations of “ok” across the subreddits had zero matches.
 
 ### Cosine Similarity 
 
