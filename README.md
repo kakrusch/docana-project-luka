@@ -33,6 +33,8 @@ In spoken language the word “ok” is uttered frequently and can appear in dif
 Hypothesis:
 From the project we expect to see differences in the usage of the word "ok" and its different spellings across subreddits.
 
+***
+
 ## Dataset
 The dataset used is 
 
@@ -46,8 +48,9 @@ For this project, we used the “webis/tldr-17” dataset (Völske et al., 2017)
 
 - we used the "content" part only (not including the tldr) to train the model
 
-## Methods
+***
 
+## Methods
 
 Outline the tools, software, and hardware environment, along with configurations used for conducting your experiments. Be sure to document the Python version and other dependencies clearly. Provide step-by-step instructions on how to recreate your environment, ensuring anyone can replicate your setup with ease:
 
@@ -143,10 +146,9 @@ def skipgram_w2v_model(tokenized_content, model_name):
 
 6. We analysed the different version of OK with 4 comparison metrics.
 
-
+***
 
 ## Comparison Metrics and Results
-
 
 ### Word Senses 
 The idea was to find out the different word senses for the different spellings of okay and then see whether the subreddits yield different results. In a first step, we used the nltk library and the built-in wordnet function to see all possible definitions for the different versions of “ok”. This gave us the following results: 
@@ -290,8 +292,7 @@ Within subreddits: tifu all positive, in other subreddits O.K is generally negat
 | ![Graph of the Sentiments of okays in AskReddit](/figures/Sentiment of different okays in AskReddit.png)  | ![Graph of the Sentiments of okays in League of Legends](/figures/Sentiment of different okays in League of Legends.png) |
 | ![Graph of the Sentiments of okays in Relationships](/figures/Sentiment of different okays in Relationships.png)  | ![Graph of the Sentiments of okays in TIFU](/figures/Sentiment of different okays in TIFU.png) |
 
-
-
+***
 
 ## Discussion
 
