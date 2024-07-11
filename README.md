@@ -50,6 +50,8 @@ For this project, we used the “webis/tldr-17” dataset from Hugging Face whic
 
 ### Prepocessing
 
+- done on google colab, so relevant sections need to be adapted (eg. loading files)
+
 1. We got the 4 largest subreddits in the dataset and put it in a dataframe using panda to access it better during the analysis. We saved it in a csv file so that it did not have to be loaded the data every time. 
     - AskReddit, League of Legends, Relationships, TIFU
       
