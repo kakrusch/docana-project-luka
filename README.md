@@ -56,12 +56,23 @@ For this project, we used the “webis/tldr-17” dataset from Hugging Face whic
 ### Prepocessing
 
 1. We got the 4 largest subreddits in the dataset and put it in a dataframe using panda to access it better during the analysis. We saved it in a csv file so that it did not have to be loaded the data every time. 
-    - AskReddit, League of Legends, Relationships, TIFU
+    - AskReddit (first [:200000000] tokens, as the subreddit was much larger than all others), League of Legends, Relationships, TIFU
       
 2.  We custom tokenized each subreddit using NLTK and regular expressions for the exceptions. Punctuation was removed for all tokens except for 'O.K' and lowered all tokens except for 'Ok' and 'O.K'.
         - For the versions of 'ok' case and punctuation matters: Ok vs ok vs O.K., but for other words it introduced too much noise.
 
-
+```bash
+def custom_tokenizer(raw_list):
+  # split into sentences and words: list of lists for word2vec
+  tokenized = sent_tokenize(raw_list)
+  tokenized = [word_tokenize(i) for i in tokenized]
+  # remove all tokens that are just punctuation
+  tokenized = [[i for i in sent if i not in string.punctuation] for sent in tokenized ]
+  # for all tokens that are not a version of OK, lowercase and remove puntuation
+  tokenized = [[i if i in initial_ok_list else i.lower() for i in sent] for sent in tokenized ]
+  tokenized = [[i if i in initial_ok_list else re.sub(r'[^\w\s]', '', i)  for i in sent] for sent in tokenized ]
+  return tokenized
+```
     
 4. We got all the OKs in each subreddits and got a list of all the oks that appeared in every single subreddit (more than 5 times to generate mostly good embeddings).
     - 'okay', 'ok', 'Ok', 'O.K', 'okey', 'k'
