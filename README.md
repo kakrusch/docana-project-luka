@@ -78,11 +78,11 @@ For this project, we used the “webis/tldr-17” dataset from Hugging Face whic
 ```bash
 def skipgram_w2v_model(tokenized_content, model_name):
   skipgram_model = Word2Vec(vector_size=100, # size of 2D vector
-														window=5,		 #  distance between the current and predicted word
-														sg=1,			 # Skip-Gram model 
-														min_count=5)	 # Ignores all words with a total frequency lower than five 			
-	skipgram_model.build_vocab(tokenized_content) # store all words in a vocabulary
-	skipgram_model.train(tokenized_content, total_examples=skipgram_model.corpus_count, epochs=10)
+ 			    window=5, #  distance between the current and predicted word
+ 			    sg=1,  # Skip-Gram model
+ 			    min_count=5)  # Ignores all words with a total frequency lower than five 			
+  skipgram_model.build_vocab(tokenized_content) # store all words in a vocabulary
+  skipgram_model.train(tokenized_content, total_examples=skipgram_model.corpus_count, epochs=10)
 ```
 
 
