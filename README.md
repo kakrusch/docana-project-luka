@@ -269,7 +269,7 @@ Within subreddits: League overall negative, tifu all positive and in other subre
 | ![Graph of the Sentiments of okays in Relationships](/figures/Sentiment of different okays in Relationships.png)  | ![Graph of the Sentiments of okays in TIFU](/figures/Sentiment of different okays in TIFU.png) |
 
 
-## Discussion
+## Discussion and Conclusion
 
 - Is the meaning of OK and its variations always the same?
    - Are the different spellings associated with different uses, meanings etc...?
@@ -305,10 +305,6 @@ Analysing the results provided by every metric employed, we can deduce that the 
 
 
 Present the findings from your experiments, supported by visual or statistical evidence. Discuss how these results address your main research question.
-
-## Conclusion
-
-Summarize the major outcomes of your project, reflect on the research findings, and clearly state the conclusions you've drawn from the study.
 
 ***
 
