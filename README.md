@@ -108,7 +108,7 @@ def skipgram_w2v_model(tokenized_content, model_name):
   skipgram_model.train(tokenized_content, total_examples=skipgram_model.corpus_count, epochs=10)
 ```
 
-5. With the model we checked the 100 most similar words for each OK in each subreddit, the most frequent OKs in each and the vector representation of each OK.
+5. With the model we checked the 100 most similar words (Nearest Neighbors) for each OK in each subreddit, the most frequent OKs in each and the vector representation of each OK.
 
 | Subreddit  | Words in Common from 10 most similar      |
 |----------------|-----------------------------------------|
@@ -246,7 +246,7 @@ The cosine similarity analisys was conducted in order to, firstly, observe the s
 
 
 
-### Overlapping Words
+### Overlapping Nearest Neighbors
 
 A pairwise semantic similarity analysis was carried out to compare the overlapping most similar words of each OK and their corresponding similarity scores. For this analysis, we extracted the similar words of all OKs in two subreddits and compares only the overlapping words. 
 
