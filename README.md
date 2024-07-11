@@ -1,11 +1,10 @@
 ***
 
-# Project Title
+# OK?
 
 Group members: Alex Weyhe, Kascha Kruschwitz, Ludmila Bajuk
 
 ## Introduction (Background)
-Start off by setting the stage for your project. Give a brief overview of relevant studies or work that have tackled similar issues. Then, clearly describe the main question or problem your project is designed to solve.
 
                                        FEEL FREE TO CHANGE EVERYTHING YOU WANT
 
