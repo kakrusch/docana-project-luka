@@ -1,7 +1,7 @@
 ***
 
 # OK?
-
+ 
 Group members: Alex Weyhe, Kascha Kruschwitz, Ludmila Bajuk
 
 ## Introduction (Background)
