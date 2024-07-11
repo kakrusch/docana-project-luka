@@ -14,8 +14,8 @@ In spoken language the word “ok” is uttered frequently and can appear in dif
 - In how far do variations of the word “ok” differ in their usage in online forums?
 - Is the meaning of OK and its variations always the same?
   
-                              1. ***Are the different spellings associated with different uses, meanings etc...?***
-                              2. ***Are there differences across topics/user types?***
+1. ***Are the different spellings associated with different uses, meanings etc...?***
+2. ***Are there differences across topics/user types?***
   
 Hypothesis:
 From the project we expect to see differences in the usage of the word "ok" and its different spellings across subreddits.
