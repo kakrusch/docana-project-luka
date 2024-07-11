@@ -273,20 +273,22 @@ Within subreddits: tifu all positive, in other subreddits O.K is generally negat
    - Are there differences across topics/user types?
  
   
-   -  the standard spellings "okay", "ok" and "Ok" seem to be mostly associated with the standard uses
-         -   consistent across subreddits
-         -  most similar to words like "alright", "fine", "yeah" and posititve sentiment associated with meanings like good)
-         -  like adjectival/response particle uses from spoken langugage uses
-   - "okey", "O.K" and "k" more unique
-         - "k" - not reliable embeddings
-         - "okey":
-               - different cosine similarity in each subreddit
-               - overall very low across subreddit similarity
-               - very negative in Askreddit but positive in all others
-         - O.K.:
-             - consistently most negative (except in TIFU)   
-    - cosine similarity distributions in TIFU and AskReddit most similar - consistent with having the most similar uses
-    - league of legends uses ok-variations differently to others (eg. more negative sentiment overall)- consistent with having the most different topic
+-  the standard spellings "okay", "ok" and "Ok" seem to be mostly associated with the standard uses
+    -   consistent across subreddits
+    -  most similar to words like "alright", "fine", "yeah" and posititve sentiment associated with meanings like good)
+    -  like adjectival/response particle uses from spoken langugage uses
+- "okey", "O.K" and "k" more unique: likely neither have reliable embeddings
+     - "k" - definitely not reliable embeddings (likely also match other uses of the letter, eg in names)
+     - okey and O.K: match with words of uncertainty or insults
+     - "okey":
+           - different cosine similarity in each subreddit
+           - overall very low across subreddit similarity
+           - very negative in Askreddit but positive in all others
+     - O.K.:
+         - consistently most negative (except in TIFU)   
+- cosine similarity distributions in TIFU and AskReddit most similar
+      - consistent with having the most similar uses
+      - league of legends uses ok-variations differently to others (eg. more negative sentiment overall)- consistent with having the most different topic
 
   
 - wordsense - lesk
