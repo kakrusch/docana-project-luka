@@ -64,7 +64,8 @@ def custom_tokenizer(raw_list):
 ```
     
 3. We got all the OKs in each subreddits and got a list of all the oks that appeared in every single subreddit (more than 5 times to generate mostly good embeddings).
-                                                    'okay', 'ok', 'Ok', 'O.K', 'okey', 'k'
+
+                       														       										 'okay', 'ok', 'Ok', 'O.K', 'okey', 'k'
 
 ### Model Setup 
 
