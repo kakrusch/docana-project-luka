@@ -33,8 +33,6 @@ In spoken language the word “ok” is uttered frequently and can appear in dif
 Hypothesis:
 From the project we expect to see differences in the usage of the word "ok" and its different spellings across subreddits.
 
-***
-
 ## Dataset
 The dataset used is 
 
@@ -48,7 +46,6 @@ For this project, we used the “webis/tldr-17” dataset (Völske et al., 2017)
 
 - we used the "content" part only (not including the tldr) to train the model
 
-***
 
 ## Methods
 
@@ -146,8 +143,6 @@ def skipgram_w2v_model(tokenized_content, model_name):
 
 6. We analysed the different version of OK with 4 comparison metrics.
 
-***
-
 ## Comparison Metrics and Results
 
 ### Word Senses 
@@ -164,7 +159,7 @@ definition 2: being satisfactory or in satisfactory condition
 
 definition 3: an expression of agreement normally occurring at the beginning of a sentence
 
-_____________________________________________________________________
+***
 
 WordNet definitions for "okay":
 
@@ -176,7 +171,7 @@ definition 2: being satisfactory or in satisfactory condition
 
 definition 3: in a satisfactory or adequate manner; ; ; (`alright' is a nonstandard variant of `all right')
 
-_____________________________________________________________________
+***
 
 WordNet definitions for "Ok":
 
@@ -188,7 +183,7 @@ definition 2: being satisfactory or in satisfactory condition
 
 definition 3: an expression of agreement normally occurring at the beginning of a sentence
 
-_____________________________________________________________________
+***
 
 WordNet definitions for "O.K.":
 
@@ -200,7 +195,7 @@ definition 2: being satisfactory or in satisfactory condition
 
 definition 3: in a satisfactory or adequate manner; ; ; (`alright' is a nonstandard variant of `all right')
 
-_____________________________________________________________________
+***
 
 WordNet definitions for "k":
 
@@ -220,11 +215,13 @@ definition 6: street names for ketamine
 
 definition 7: denoting a quantity consisting of 1,000 items or units
 
-_____________________________________________________________________
+***
 
 WordNet definitions for "okey":
 
 definition 0: an endorsement
+
+***
 
 In the next step we employed the Lesk algorithm to find out the definition of for each variation of ok based on its most similar words across subreddits. To briefly lay out what the Lesk algorithm does, it takes an input word and a sentence in which a word appears in and then finds the overlapping words from the sentence in each gloss of the target word. The gloss with the most matches will be put out as the definition. Unfortunately, in our case it did not yield any results and the definition for each variation of “ok” was the same in each subreddit. We then tried to see how many of the most similar words for each “ok” overlapped with the glosses in all subreddits. We found out that only for the word “okay” there was one match each for all subreddits. All other variations of “ok” across the subreddits had zero matches.
 
@@ -292,7 +289,6 @@ Within subreddits: tifu all positive, in other subreddits O.K is generally negat
 | ![Graph of the Sentiments of okays in AskReddit](/figures/Sentiment of different okays in AskReddit.png)  | ![Graph of the Sentiments of okays in League of Legends](/figures/Sentiment of different okays in League of Legends.png) |
 | ![Graph of the Sentiments of okays in Relationships](/figures/Sentiment of different okays in Relationships.png)  | ![Graph of the Sentiments of okays in TIFU](/figures/Sentiment of different okays in TIFU.png) |
 
-***
 
 ## Discussion
 
@@ -329,6 +325,8 @@ Present the findings from your experiments, supported by visual or statistical e
 ## Conclusion
 
 Summarize the major outcomes of your project, reflect on the research findings, and clearly state the conclusions you've drawn from the study.
+
+***
 
 ## Contributions
 
