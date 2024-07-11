@@ -210,7 +210,6 @@ In the next step, we employed the Lesk algorithm to find out the definition for 
 
 The cosine similarity analisys was conducted in order to, firstly, observe the similarity or dissimilarity of the different versions of OK in eachsubreddit. Therefore, within each subreddit we calculated the cosine similarity for each two Oks using Word2Vec's inbuilt metric. For example, 'ok' and 'O.K' similarity scores differ significantly between the TIFU and relationship subreddits. 
 
-|-----|------|
 | tifu               | ok - O.K : 0.7133671   |
 | askreddit          | ok - O.K : 0.7002533   |
 | league of legends  | ok - O.K : 0.562705    | 
@@ -253,15 +252,17 @@ The results of the pairwise comparison grouped the OKs into the ones that actual
 
 
 ### Sentiment analysis 
-Finally, sentiment analysis was conducted based on the 50 most similar words for each OK in each subreddit, using a lexicon provided in the VADER sentiment analyzer (Hutto & Gilbert, 2014). This lexicon included human-rated sentiments for many words specific to social media discourse and was thus deemed well-suited for the task of calculating the sentiments on Reddit. 
+Finally, sentiment analysis was conducted based on the 50 nearest neighbors for each OK in each subreddit, using a lexicon provided by the VADER sentiment analyzer (Hutto & Gilbert, 2014). This lexicon included human-rated sentiments for many words specific to social media discourse and was thus deemed well-suited for the task of calculating the sentiments on Reddit. 50 nearest neighbors were used to match at least one similar word to a word in the provided lexicon but not generate words that are too dissimilar. This resulted in all words having at least one match, except for "k" in the League of Legends subreddit. The average number of matched words was 4.76, with disproportionately many matches for 'okay' and 'ok'. We then plotted the results.
 
-Across subreddits: “okay” and “ok” overall positive, others tending towards neutral
+
+
+Across subreddits: “okay” and “ok” overall positive, others tending towards neutral, O.K is generally negative, 
 
 
 | ![Graph of the Sentiments of okays across subreddits](/figures/Sentiment of different okays across subreddits.png)  | ![Graph of the Sentiments of all subreddits expressed by ok](/figures/sent-all-okays.png) |
 
 
-Within subreddits: tifu all positive, in other subreddits O.K is generally negative
+Within subreddits: League overall negative, tifu all positive and in other subreddits 
 
 
 | ![Graph of the Sentiments of okays in AskReddit](/figures/Sentiment of different okays in AskReddit.png)  | ![Graph of the Sentiments of okays in League of Legends](/figures/Sentiment of different okays in League of Legends.png) |
@@ -317,8 +318,6 @@ Summarize the major outcomes of your project, reflect on the research findings, 
 | Ludmila Bajuk         | ...  :)                                                   |
 
 ## References
-
--lesk??
 
 https://www.geeksforgeeks.org/word-embeddings-in-nlp/
 
