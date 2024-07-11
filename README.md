@@ -259,7 +259,7 @@ First, the sentiment across subreddits was compared. `okay` and `ok` most consis
 | ![Graph of the Sentiments of okays across subreddits](/figures/Sentiment of different okays across subreddits.png)  | ![Graph of the Sentiments of all subreddits expressed by ok](/figures/sent-all-okays.png) |
 
 
-Within subreddits, the patterns observed above are confirmed. TIFU expresses the most positive sentiment, because all versions of OK express a positive sentiment. In Askreddit, Relationships and TIFU, "okay", "Ok", "ok" and "k" all express positive sentiment. Of these, only "okay" is positive in League of Legends, which otherwise displays a markedly different pattern than the other subreddits, with 'okay' being neutral and 'Ok' very negative.
+Within subreddits, the patterns observed above are confirmed. TIFU expresses the most positive sentiment, because all versions of OK express a positive sentiment. In Askreddit, Relationships and TIFU, `okay`, `Ok`, `ok` and `k` all express positive sentiment. Of these, only `okay` is positive in League of Legends, which otherwise displays a markedly different pattern than the other subreddits, with `okay` being neutral and `Ok` very negative.
 
 
 - okey: positive in all except AskReddit (where its the most negative)
@@ -277,7 +277,7 @@ Within subreddits, the patterns observed above are confirmed. TIFU expresses the
    - Are the different spellings associated with different uses, meanings etc...?
    - Are there differences across topics/user types?
    - 
-Analysing the results provided by every metric employed, we can deduce that the standard spellings "okay", "ok" and "Ok" seem to be mostly associated with the standard uses, such as adjectival or response particle, which are used similarly to how OK is used in spoken language. Apart from being consistent across subreddits, the nearest neighbours of these three versions of OK displayed a high percentage of the similar words, theses meainly being words like 'alright', 'fine', and 'yea'. One comparable feature from these words is that they denote a positive sentiment associated with meanings like 'good'. 
+Analysing the results provided by every metric employed, we can deduce that the standard spellings `okay`, `ok` and `Ok` seem to be mostly associated with the standard uses, such as adjectival or response particle, which are used similarly to how OK is used in spoken language. Apart from being consistent across subreddits, the nearest neighbours of these three versions of OK displayed a high percentage of the similar words, theses meainly being words like `alright`, `fine`, and `yea`. One comparable feature from these words is that they denote a positive sentiment associated with meanings like 'good'. 
     
 -  the standard spellings "okay", "ok" and "Ok" seem to be mostly associated with the standard uses
     -   consistent across subreddits
