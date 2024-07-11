@@ -1,3 +1,4 @@
+python
 datasets
 nltk
 pandas
@@ -12,3 +13,4 @@ os
 codecs
 math
 statistics
+sklearn
