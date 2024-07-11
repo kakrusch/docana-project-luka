@@ -36,20 +36,11 @@ For this project, we used the “webis/tldr-17” dataset (Völske et al., 2017)
 
 ## Methods
 
-Outline the tools, software, and hardware environment, along with configurations used for conducting your experiments. Be sure to document the Python version and other dependencies clearly. Provide step-by-step instructions on how to recreate your environment, ensuring anyone can replicate your setup with ease:
+Our project was coded on Google Colab in order to work collaboratively. Therefore, relevant sections need to be adapted to run the code, mainly loading the files, for example. Even though we have included a requirements.txt file, we pip installed all the requirements in the colab notebook, so they would have to be removed from the top of the two documents. 
 
-
-Include a `requirements.txt` file in your project repository. This file should list all the Python libraries and their versions needed to run the project. Provide instructions on how to install these dependencies using pip, for example:
-
-```
-pip install -r requirements.txt
-```
-
-
-- done on google colab, so relevant sections need to be adapted (eg. mainly loading files)
-    - requirements.txt in github, but we pip installed directly in the colab notebook
-    - in case of using a different interface, remove these from the top of the two documents
-- code consists of two documents: one for preprocessing and running the model - the model is saved after the last step and saved, so that it can be used locally as input to the second file, which contains all the analysis
+The code consist of two documents: 
+1. One for extracting and preprocessing the data, and running the skipgram model. Such model is saved after the last step, so that it can be used locally as input to the second file.
+2. The second file consist of the analysis of the data using fours comparison metrics and plotted the results obtained.  
 
 ### Prepocessing
 
