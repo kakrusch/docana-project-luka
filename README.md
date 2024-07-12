@@ -9,9 +9,11 @@ Group members: Alex Weyhe, Kascha Kruschwitz, Ludmila Bajuk
 In spoken language the word `ok` is uttered frequently and can appear in different contexts. Multiple studies have investigated in what different ways the word is used in English and other languages. According to Burchifield (1982 in Adegbija & Bello, 2019), the word `okay` can appear as a response or phrase to show acceptance or agreement. Additionally, it can be classified as an adjective to mean “correct”, good”, or “satisfactory. Condon (1986 in Lee, 2008) introduces `okey` as a marker of transitions in discourse. Finally, in another study by Adegbija & Bello (2001), the usage of `O.K.` was investigated in Nigerian English and compared to (“Standard”) English. In Nigerian English it can be used as a gap filler, surprise, or discourse termination.
 </div>
 
+
 <div align="justify">
 Here, the question comes to mind if one uses the word in the same contexts in written language. Consequently, the focus of this project is to investigate the different usage of “ok” in written language, in particular in online forums. The peculiarity in written language arises from the different spelling variations of the word – as it can be seen by the different spellings in the preceding sentences. Thus, this project investigates whether various spelling forms are used differently in written language and answers the research question: In how far do variations of the word `ok` differ in their usage in online forums? So, from the project we expect to see differences in the usage of the word "ok" and its different spellings across subreddits.
 </div>
+
 
 ### Research Questions
   
@@ -312,7 +314,6 @@ In terms of differences across subreddits, the cosine distribution between TIFU 
 <div align="justify">
 Overall, we have found differences both within and across subreddits in the use of different orthographoc realizations of the words `'okay', 'ok', 'Ok', 'O.K', 'okey', 'k'`. Users of Reddit may make use of these forms. similar to how speakers may use different intonation to change the meaning of a single word.
 </div>
-
 
 
 
