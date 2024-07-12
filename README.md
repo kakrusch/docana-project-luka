@@ -33,7 +33,7 @@ For this project, we used the “webis/tldr-17” dataset (Völske et al., 2017)
 ## Methods
 
 <div align="justify">
-Our project was coded on Google Colab in order to work collaboratively. Therefore, relevant sections need to be adapted to run the code, mainly loading the files, for example. Even though we have included a requirements.txt file, we pip installed all the requirements in the colab notebook, so they would have to be removed from the top of the two documents. 
+Our project was coded on Google Colab in order to work collaboratively. Therefore, relevant sections need to be adapted to run the code, mainly loading the files, for example. Even though we have included a requirements.txt file, we pip installed all the requirements in the colab notebook, so they would have to be removed from the top of the two documents. We uploaded one model into the code folder for demonstration purposes.
  
 </div>
 
