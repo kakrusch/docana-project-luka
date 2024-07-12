@@ -275,9 +275,16 @@ Within subreddits, the patterns observed above are confirmed. TIFU expresses the
    - Are the different spellings associated with different uses, meanings etc...?
    - Are there differences across topics/user types?
    - 
-Analyzing the results provided by every metric employed, we can deduce that the standard spellings `okay`, `ok` and `Ok` seem to be mostly associated with the standard uses, such as adjectival or response particle, which are used similarly to how OK is used in spoken language. Apart from being consistent across subreddits, the nearest neighbors of these three versions of OK displayed a high percentage of similar words, these mainly being words like `alright`, `fine`, and `yea`. One comparable feature from these words is that they denote a positive sentiment associated with meanings like 'good'.
+Analyzing the results provided by every metric employed, we can deduce that the standard spellings `okay`, `ok` and `Ok` seem to be mostly associated with the standard uses, such as adjectival or response particle, which are used similarly to how OK is used in spoken language. Apart from being consistent across subreddits, the nearest neighbors of these three versions of OK displayed a high percentage of similar words, these mainly being words like `alright`, `fine`, and `yea`. One comparable feature from these words is, that they denote a positive sentiment associated with meanings like 'good' in the majority of the subreddits, except for the League of Legends subreddit. So then, we could argue that any variation of Ok have a negative connotation in the gaming area. 
 
-Regarding the more unique spellings of OK, such as `okey`, `O.K` and `k`  
+Regarding the more unique versions of OK, such as `okey`, `O.K` and `k` the realiability of the embeddings varies signficantly, specially for `k`. This single character version of OK often fails to convey a consistent meaning of due to its brevity and poteentioal overlap with other uses of the letter `k`, such as in nicknames or as abbreviations. Therefore, `k`leads to ambiguous interpretations which makes the semantic analysis a bit undependable. 
+
+The term `okey` shows cariability in the cosine similarity analysis which indicates that it has several diverse uses. It has a low cross-subredits similarity, mainly in the AskReddit subreddit, `okey` is associated with a negative connotation while in other subreddit it denotes a positive one. 
+
+Finally, the `O.K` consistenly shows a mostly negative sentiment accros the majority od the subreddits while having different uses in the different subreddits. This means that, even though the usage in the TIFU and Askreddit are slightly similar, they differ, however, the sentiment is usually not a positive one in any of the cases. 
+
+
+
     
 -  the standard spellings "okay", "ok" and "Ok" seem to be mostly associated with the standard uses
     -   consistent across subreddits
