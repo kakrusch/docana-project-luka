@@ -8,6 +8,5 @@ relative_links:
   collections: true
 include:
   - README.md
-
-text-align: justify,
+text-align: justify-all,
 theme: jekyll-theme-hacker
