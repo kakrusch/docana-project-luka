@@ -74,12 +74,8 @@ We got all the OKs in each subreddits and got a list of all the oks that appeare
 ### Model Setup 
 
 <div align="justify">
-We built a skipgram word2vec model using Gensim, and trained a model for each subredit and save it to be easily loaded whenever we needed it. The model was trained on the entire content of each subreddit for words appearing more than 5 times.
-    -   Vector size of 100
-    -   code snippet?
-    -   skip-gram: so that from the versions of ok we can generate the most similar words
-    -   window size 5: allow 
- 
+We built a skipgram Word2Vec model using Gensim, trained a model for each subreddit and save it to be easily loaded whenever we needed it. The model was trained on the entire content of each subreddit for words appearing more than 5 times. Furthermore, we specified for the model a vector size of 100, because of our small traning sample size, as well as the skip-gram function, do that we could generate similar words and make semantic comparisons.
+
 </div>
       
 
