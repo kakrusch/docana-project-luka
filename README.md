@@ -28,7 +28,8 @@ Here, the question comes to mind if one uses the word in the same contexts in wr
 <div align="justify">
 For this project, we used the “webis/tldr-17” dataset (Völske et al., 2017) from Hugging Face which can be found here: https://huggingface.co/datasets/webis/tldr-17. A special feature of this dataset is that it only contains Reddit posts with the abbreviation “tl;dr”. This stands for “too long; didn’t read” and has become a popular tool for authors from Reddit posts to give a short summary of their posts’ contents. The dataset consists of 3,848,330 posts across a total of 29651 subreddits. Each data point contains the following data fields: author, body, normalizedBody, subreddit, subreddit_id, id, content summary. We used the "content" part only for the subreddits (not including the tldr) to train the model. For our work the different subreddits are of particular interest because we want to compare our research question across them. Additionally, since we used posts from the four biggest subreddits, it was necessary that for each post its subreddit is specified. 
 </div>
-<br>
+
+
 ## Methods
 
 <div align="justify">
