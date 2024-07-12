@@ -266,7 +266,7 @@ We paired all the subreddits with each other obtaining 6 different pairs. In thi
 </div>
 
 <div align="justify">
-For each pair, we got the mean semantic similarity for each similar and overlapping word for each 'OK', to retrieve a single score for each word in the list of overlapping words. Once every word had only one score, we averaged those scores (in the case of pair1, for example: 
+For each pair, we got the mean semantic similarity for each similar and overlapping word for each OK, to retrieve a single score for each word in the list of overlapping words. Once every word had only one score, we averaged those scores (in the case of pair1, for example: 
  
 </div>
 
