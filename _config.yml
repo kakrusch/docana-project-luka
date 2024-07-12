@@ -8,6 +8,6 @@ relative_links:
   collections: true
 include:
   - README.md
-  - REPORT.md
 
+text-align: justify,
 theme: jekyll-theme-hacker
