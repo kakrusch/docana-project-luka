@@ -87,7 +87,16 @@ def skipgram_w2v_model(tokenized_content, model_name):
   skipgram_model.train(tokenized_content, total_examples=skipgram_model.corpus_count, epochs=10)
 ```
 
-5. With the model we checked the 100 most similar words (Nearest Neighbors) for each OK in each subreddit, the most frequent OKs in each and the vector representation of each OK.
+
+
+
+## Comparison Metrics and Results
+
+We analysed the different version of OK with several comparison metrics.
+
+### Nearest Neighbors
+
+In a first exploratory step, we generated the Nearest Neighbors of each word for each subreddit, the first five of each given in the table below. This revealed that while "okay", "ok" and "Ok" had generated embeddings that would be expected from versions of Ok, the other three spellings did not generate the most reliable vectors. This can be seen by the most common words being rather unique, likely due to the relatively small sample size. However, we still took them into account in the successive analysis, to see if we could discover some pattern. 
 
 | Subreddit  | Words in Common from 10 most similar      |
 |----------------|-----------------------------------------|
@@ -120,11 +129,6 @@ def skipgram_w2v_model(tokenized_content, model_name):
 |                | k: ['john', 'j', 'jane', 'h', 'sarah']               | 
 
 
-
-
-## Comparison Metrics and Results
-
-We analysed the different version of OK with 4 comparison metrics.
 
 ### Word Senses 
 The idea was to find out the different word senses for the different spellings of okay and then see whether the subreddits yield different results. In a first step, we used the nltk library and the built-in wordnet function to see all possible definitions for the different versions of “ok”. This gave us the following results: 
