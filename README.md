@@ -11,7 +11,7 @@ In spoken language, the word `ok` is uttered frequently and can appear in differ
 <div align="justify">
 Here, the question comes to mind if one uses the word in the same context in written language. Consequently, the focus of this project is to investigate the different usage of “ok” in written language, in particular in online forums. The peculiarity in written language arises from the different spellings available for the word – as can be seen by the different spellings in the preceding sentences. Thus, this project investigates whether various spelling forms are used differently in written language and answers the research question: In how far do variations of the word `ok` differ in their usage in online forums? So, from the project we expect to see differences in the usage of the word "ok" and its different spellings across subreddits.
 </div>
-<br>
+<p></p><br>
 
 ### Research Questions
   
@@ -30,7 +30,6 @@ For this project, we used the “webis/tldr-17” dataset (Völske et al., 2017)
 
 <div align="justify">
 Our project was coded on Google Colab in order to work collaboratively. Therefore, relevant sections must be adapted to run the code, mainly loading the files, for example. Even though we have included a requirements.txt file, we pip-installed all the requirements in the Colab Notebook, so they would have to be removed from the top of the two documents. We uploaded one model into the code folder for demonstration purposes.
- 
 </div>
 
 <div align="justify">
@@ -215,11 +214,11 @@ definition 0: an endorsement
 
 ***
 
-<div align="justify">
+<p align="justify">
  
 In the next step, we employed the Lesk algorithm to find out the definition for each variation of OK based on its most similar words across subreddits. To briefly lay out what the Lesk algorithm does, it takes an input word and a sentence in which the given word appears in and then finds the overlapping words from the sentence in each gloss of the target word. The gloss with the most matches will be output as the definition. Unfortunately, in our case, it did not yield any results and the definition for each variation of “OK” was the same in each subreddit. We then tried to see how many of the most similar words for each `OK` overlapped with the glosses in all subreddits. We found out that only for the word `okay` there was one match each for all subreddits. All other variations of “ok” across the subreddits had zero matches.
 
-</div>
+</p>
 
 ### Cosine Similarity 
 
