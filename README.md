@@ -47,8 +47,8 @@ The code consist of two documents:
 1. We got the 4 largest subreddits in the dataset and put it in a dataframe using panda to access it better during the analysis. We saved it in a csv file so that it did not have to be loaded the data every time. 
     - AskReddit (first [:200000000] characters, as the subreddit was much larger than all others), League of Legends, Relationships, TIFU
       
-2.  We custom tokenized each subreddit using NLTK and regular expressions for the exceptions. Punctuation was removed for all tokens except for 'O.K' and lowered all tokens except for 'Ok' and 'O.K'.
-        - For the versions of 'ok' case and punctuation matters: Ok vs ok vs O.K., but for other words it introduced too much noise.
+2.  We custom tokenized each subreddit using NLTK and regular expressions for the exceptions. Punctuation was removed for all tokens except for `O.K` and lowered all tokens except for `Ok` and  `O.K`.
+        - For the versions of 'ok' case and punctuation matters: `Ok` vs `ok` vs `O.K.`, but for other words it introduced too much noise.
 
 ```bash
 def custom_tokenizer(raw_list):
@@ -96,7 +96,7 @@ We analysed the different version of OK with several comparison metrics.
 
 ### Nearest Neighbors
 
-In a first exploratory step, we generated the Nearest Neighbors of each word for each subreddit, the first five of each given in the table below. This revealed that while "okay", "ok" and "Ok" had generated embeddings that would be expected from versions of Ok, the other three spellings did not generate the most reliable vectors. This can be seen by the most common words being rather unique, likely due to the relatively small sample size. However, we still took them into account in the successive analysis, to see if we could discover some pattern. 
+In a first exploratory step, we generated the Nearest Neighbors of each word for each subreddit, the first five of each given in the table below. This revealed that while `okay`, `ok` and `Ok` had generated embeddings that would be expected from versions of Ok, the other three spellings did not generate the most reliable vectors. This can be seen by the most common words being rather unique, likely due to the relatively small sample size. However, we still took them into account in the successive analysis, to see if we could discover some pattern. 
 
 | Subreddit  | Words in Common from 10 most similar      |
 |----------------|-----------------------------------------|
@@ -212,7 +212,7 @@ In the next step, we employed the Lesk algorithm to find out the definition for 
 
 ### Cosine Similarity 
 
-The cosine similarity analisys was conducted in order to, firstly, observe the similarity or dissimilarity of the different versions of OK in eachsubreddit. Therefore, within each subreddit we calculated the cosine similarity for each two Oks using Word2Vec's inbuilt metric. For example, 'ok' and 'O.K' similarity scores differ significantly between the TIFU and relationship subreddits. 
+The cosine similarity analisys was conducted in order to, firstly, observe the similarity or dissimilarity of the different versions of OK in eachsubreddit. Therefore, within each subreddit we calculated the cosine similarity for each two Oks using Word2Vec's inbuilt metric. For example, `ok` and `O.K` similarity scores differ significantly between the TIFU and relationship subreddits. 
 
 | tifu               | ok - O.K : 0.7133671   |
 | askreddit          | ok - O.K : 0.7002533   |
@@ -241,16 +241,16 @@ A pairwise semantic similarity analysis was carried out to compare the overlappi
 | 'k'            | []                                        |
 
 
-We paired all the subreddits with each other obtaining 6 different pairs. In this case, the only OKs that had overlapping similar words were 'ok', 'okay', and 'Ok'. Although 'k' only had similar overlapping words or letter with in a few pairs, they were not reliable since we had an only one letter embedding. 
+We paired all the subreddits with each other obtaining 6 different pairs. In this case, the only OKs that had overlapping similar words were `ok`, `okay`, and `Ok`. Although `k` only had similar overlapping words or letter with in a few pairs, they were not reliable since we had an only one letter embedding. 
 
 For each pair we got the mean semantic similarity for each similar and overlapping word for each 'OK', so that we got now one score for each word in the list of overlaping words. Once every word had only one score, we averaged those scores (in the case of pair1, for example: 
 
       pair1 = get_most_similar_words(tifu_sim_ok, askreddit_sim_ok)
       {'okay': ['ok', 'alright', 'fine', 'allright', 'yeah', 'O.K', 'yea']}
  
-we get the mean value of the scores we got from the first 6 words found in the 'okay' overlapping words list). After getting the mean score for each 'OK' in each subreddit, we calculated the final mean score of each OK across subreddits obtaining, in that way, the semantic similarity of the same 'OK' in different contexts. 
+we get the mean value of the scores we got from the first 6 words found in the `okay` overlapping words list). After getting the mean score for each 'OK' in each subreddit, we calculated the final mean score of each OK across subreddits obtaining, in that way, the semantic similarity of the same 'OK' in different contexts. 
 
-The results of the pairwise comparison grouped the OKs into the ones that actually had overlapping similar words, and the ones that did not. On the one hand, the variations `ok`, `okay` and `Ok` had an approximate of 80% of semantic similarity accross subreddits. More so, for the word `k` a percentage of around 80 is shown, however, these results are not accurate since the similar common words for 'k' were mainly aisolated letters or proper people's names. This may account for the fact that 'k' is also an sigle letter, and therefore, quiet unrelieable. The matching to the proper names could be the consequence of simplifying names into nicknames of only one letter, for instances, `Kim` = `k`. On the other hand, the words `O.K` and `okey` presented no comparable overlapping word neighbours, resulting into an dissimilar semantic relation.
+The results of the pairwise comparison grouped the OKs into the ones that actually had overlapping similar words, and the ones that did not. On the one hand, the variations `ok`, `okay` and `Ok` had an approximate of 80% of semantic similarity accross subreddits. More so, for the word `k` a percentage of around 80 is shown, however, these results are not accurate since the similar common words for `k` were mainly aisolated letters or proper people's names. This may account for the fact that 'k' is also an sigle letter, and therefore, quiet unrelieable. The matching to the proper names could be the consequence of simplifying names into nicknames of only one letter, for instances, `Kim` = `k`. On the other hand, the words `O.K` and `okey` presented no comparable overlapping word neighbours, resulting into an dissimilar semantic relation.
 
 ![Word Overlapping Semantic Similarity](https://github.com/kakrusch/docana-project-luka/assets/162272922/5a572432-a872-4175-96e5-f51b15b836ae)
 
@@ -275,7 +275,9 @@ Within subreddits, the patterns observed above are confirmed. TIFU expresses the
    - Are the different spellings associated with different uses, meanings etc...?
    - Are there differences across topics/user types?
    - 
-Analyzing the results provided by every metric employed, we can deduce that the standard spellings `okay`, `ok` and `Ok` seem to be mostly associated with the standard uses, such as adjectival or response particle, which are used similarly to how OK is used in spoken language. Apart from being consistent across subreddits, the nearest neighbors of these three versions of OK displayed a high percentage of similar words, these mainly being words like `alright`, `fine`, and `yea`. One comparable feature from these words is that they denote a positive sentiment associated with meanings like 'good'. 
+Analyzing the results provided by every metric employed, we can deduce that the standard spellings `okay`, `ok` and `Ok` seem to be mostly associated with the standard uses, such as adjectival or response particle, which are used similarly to how OK is used in spoken language. Apart from being consistent across subreddits, the nearest neighbors of these three versions of OK displayed a high percentage of similar words, these mainly being words like `alright`, `fine`, and `yea`. One comparable feature from these words is that they denote a positive sentiment associated with meanings like 'good'.
+
+Regarding the more unique spellings of OK, such as `okey`, `O.K` and `k`  
     
 -  the standard spellings "okay", "ok" and "Ok" seem to be mostly associated with the standard uses
     -   consistent across subreddits
