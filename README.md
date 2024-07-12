@@ -6,33 +6,17 @@ Group members: Alex Weyhe, Kascha Kruschwitz, Ludmila Bajuk
 
 ## Introduction (Background)
 
-                                       FEEL FREE TO CHANGE EVERYTHING YOU WANT
 
-In spoken language the word `ok` is uttered frequently and can appear in different contexts. Multiple studies have investigated in what different ways the word is used in English and other languages. According to Burchifield (1982 in Adegbija & Bello, 2019), the word `okay` can appear as a response or phrase to show acceptance or agreement. Additionally, it can be classified as an adjective to mean “correct”, good”, or “satisfactory. Condon (1986 in Lee, 2008) introduces `okey` as a marker of transitions in discourse. Finally, in another study by Adegbija & Bello (2001), the usage of `O.K.` was investigated in Nigerian English and compared to (“Standard”) English. In Nigerian English it can be used as a gap filler, surprise, or discourse termination. [better transition needed]Here, the question comes to mind if one uses the word in the same contexts in written language. Consequently, the focus of this project is to investigate the different usage of “ok” in written language, in particular in online forums. The peculiarity in written language arises from the different spelling variations of the word – as it can be seen by the different spellings in the preceding sentences. Thus, this project investigates whether various spelling forms are used differently in written language and answers the research question: In how far do variations of the word `ok` differ in their usage in online forums? 
+In spoken language the word `ok` is uttered frequently and can appear in different contexts. Multiple studies have investigated in what different ways the word is used in English and other languages. According to Burchifield (1982 in Adegbija & Bello, 2019), the word `okay` can appear as a response or phrase to show acceptance or agreement. Additionally, it can be classified as an adjective to mean “correct”, good”, or “satisfactory. Condon (1986 in Lee, 2008) introduces `okey` as a marker of transitions in discourse. Finally, in another study by Adegbija & Bello (2001), the usage of `O.K.` was investigated in Nigerian English and compared to (“Standard”) English. In Nigerian English it can be used as a gap filler, surprise, or discourse termination. Here, the question comes to mind if one uses the word in the same contexts in written language. Consequently, the focus of this project is to investigate the different usage of “ok” in written language, in particular in online forums. The peculiarity in written language arises from the different spelling variations of the word – as it can be seen by the different spellings in the preceding sentences. Thus, this project investigates whether various spelling forms are used differently in written language and answers the research question: In how far do variations of the word `ok` differ in their usage in online forums? So, from the project we expect to see differences in the usage of the word "ok" and its different spellings across subreddits.
 
 ### Research Questions
-- In how far do variations of the word “ok” differ in their usage in online forums?
-- Is the meaning of OK and its variations always the same?
   
 1. ***Are the different spellings associated with different uses, meanings etc...?***
 2. ***Are there differences across topics/user types?***
-  
-Hypothesis:
-From the project we expect to see differences in the usage of the word "ok" and its different spellings across subreddits.
 
 ## Dataset
-The dataset used is 
 
-https://aclanthology.org/W17-4508.pdf - (Völske et al., 2017)
-
-Provide a short description of the dataset used in your project. Focus on highlighting the aspects that are particularly relevant to your work.
-what parts of the datas set we used and why 
- - count post number to pick corpora
-
-For this project, we used the “webis/tldr-17” dataset (Völske et al., 2017) from Hugging Face which can be found here: https://huggingface.co/datasets/webis/tldr-17. A special feature of this dataset is that it only contains Reddit posts with the abbreviation “tl;dr”. This stands for “too long; didn’t read” and has become a popular tool for authors from Reddit posts to give a short summary of their posts’ contents. The dataset consists of 3,848,330 posts across a total of 29651 subreddits. Each data point contains the following data fields: author, body, normalizedBody, subreddit, subreddit_id, id, content summary. For our work the different subreddits are of particular interest because we want to compare our research question across them. Additionally, since we used posts from the four biggest subreddits, it was necessary that for each post its subreddit is specified. 
-
-- we used the "content" part only (not including the tldr) to train the model
-
+For this project, we used the “webis/tldr-17” dataset (Völske et al., 2017) from Hugging Face which can be found here: https://huggingface.co/datasets/webis/tldr-17. A special feature of this dataset is that it only contains Reddit posts with the abbreviation “tl;dr”. This stands for “too long; didn’t read” and has become a popular tool for authors from Reddit posts to give a short summary of their posts’ contents. The dataset consists of 3,848,330 posts across a total of 29651 subreddits. Each data point contains the following data fields: author, body, normalizedBody, subreddit, subreddit_id, id, content summary. We used the "content" part only for the subreddits (not including the tldr) to train the model. For our work the different subreddits are of particular interest because we want to compare our research question across them. Additionally, since we used posts from the four biggest subreddits, it was necessary that for each post its subreddit is specified. 
 
 ## Methods
 
@@ -44,8 +28,7 @@ The code consist of two documents:
 
 ### Prepocessing
 
-1. We got the 4 largest subreddits in the dataset and put it in a dataframe using panda to access it better during the analysis. We saved it in a csv file so that it did not have to be loaded the data every time. 
-    - AskReddit (first [:200000000] characters, as the subreddit was much larger than all others), League of Legends, Relationships, TIFU
+1. We got the 4 largest subreddits in the dataset and put it in a dataframe using panda to access it better during the analysis. We saved it in a csv file so that it did not have to be loaded the data every time. AskReddit (first [:200000000] characters, as the subreddit was much larger than all others), League of Legends, Relationships, TIFU
       
 2.  We custom tokenized each subreddit using NLTK and regular expressions for the exceptions. Punctuation was removed for all tokens except for `O.K` and lowered all tokens except for `Ok` and  `O.K`.
         - For the versions of 'ok' case and punctuation matters: `Ok` vs `ok` vs `O.K.`, but for other words it introduced too much noise.
