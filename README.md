@@ -253,37 +253,17 @@ Within subreddits, the patterns observed above are confirmed. TIFU expresses the
 - Is the meaning of OK and its variations always the same?
    - Are the different spellings associated with different uses, meanings etc...?
    - Are there differences across topics/user types?
-   - 
-Analyzing the results provided by every metric employed, we can deduce that the standard spellings `okay`, `ok` and `Ok` seem to be mostly associated with the standard uses, such as adjectival or response particle, which are used similarly to how OK is used in spoken language. Apart from being consistent across subreddits, the nearest neighbors of these three versions of OK displayed a high percentage of similar words, these mainly being words like `alright`, `fine`, and `yea`. One comparable feature from these words is, that they denote a positive sentiment associated with meanings like 'good' in the majority of the subreddits, except for the League of Legends subreddit. So then, we could argue that any variation of Ok have a negative connotation in the gaming area. 
-
-Regarding the more unique versions of OK, such as `okey`, `O.K` and `k` the realiability of the embeddings varies signficantly, specially for `k`. This single character version of OK often fails to convey a consistent meaning of due to its brevity and poteentioal overlap with other uses of the letter `k`, such as in nicknames or as abbreviations. Therefore, `k`leads to ambiguous interpretations which makes the semantic analysis a bit undependable. 
-
-The term `okey` shows cariability in the cosine similarity analysis which indicates that it has several diverse uses. It has a low cross-subredits similarity, mainly in the AskReddit subreddit, `okey` is associated with a negative connotation while in other subreddit it denotes a positive one. 
-
-Finally, the `O.K` consistenly shows a mostly negative sentiment accros the majority od the subreddits while having different uses in the different subreddits. This means that, even though the usage in the TIFU and Askreddit are slightly similar, they differ, however, the sentiment is usually not a positive one in any of the cases. 
 
 
+Analyzing the results provided by every metric employed, we can deduce that the standard spellings `okay`, `ok` and `Ok` seem to be mostly associated with the standard uses idetntified for spoken langugage, such as adjectival or response particle. Apart from being consistent across subreddits, the nearest neighbors of these three versions of OK displayed a high percentage of similar words, these mainly being words like `alright`, `fine`, and `yea`. One comparable feature from these words is, that they denote a positive sentiment associated with meanings like 'good' in the majority of the subreddits, except for the League of Legends subreddit. It thus seems any variation of Ok have a negative connotation in the gaming area. 
 
-    
--  the standard spellings "okay", "ok" and "Ok" seem to be mostly associated with the standard uses
-    -   consistent across subreddits
-    -  most similar to words like "alright", "fine", "yeah" and posititve sentiment associated with meanings like good)
-    -  like adjectival/response particle uses from spoken langugage uses
- 
-  
-- "okey", "O.K" and "k" more unique: likely neither have reliable embeddings
-     - "k" - definitely not reliable embeddings (likely also match other uses of the letter, eg in names)
-     - okey and O.K: match with words of uncertainty or insults
-     - "okey":
-           - different cosine similarity in each subreddit
-           - overall very low across subreddit similarity
-           - very negative in Askreddit but positive in all others
-     - O.K.:
-         - consistently most negative (except in TIFU)   
-- cosine similarity distributions in TIFU and AskReddit most similar
-      - consistent with having the most similar uses
-      - league of legends uses ok-variations differently to others (eg. more negative sentiment overall)
-          - consistent with having the most different topic
+Regarding the more unique versions of OK, such as `okey`, `O.K` and `k` the realiability of the embeddings varies signficantly, especially for `k`. Thus, our analzsis here must be taken with a grain of salt. The single character version `k` often fails to convey a consistent meaning, due to its brevity and potential overlap with other uses of the letter `k`, such as in nicknames or as abbreviations. Therefore, `k` leads to ambiguous interpretations which makes sny semantic analysis not dependable. The terms `okey` and `O.K` cluster somewhat, in that their nearest neighbors seem to relate to words of uncertainty or swear words. The term `okey` shows variability in the cosine similarity analysis and has a low cross-subredits similarity, which indicates that it has several diverse uses. Mainly in the AskReddit subreddit, `okey` is associated with a negative connotation while in other subreddit it denotes a positive one. Finally, `O.K` consistenly shows a mostly negative sentiment accross the majority of the subreddits while having different nearest neighbors in the different subreddits. This means that, even though the usage in the TIFU and Askreddit are slightly similar, they differ. However, the sentiment is usually not a positive one in any of the cases. 
+
+In terms of differences across subreddits, the cosine distribution between TIFU and AskReddit seems the most similar, which is expected considering they both have the most broad topic. Further, League of Legends is the most different in almost all metrics, which again is expected since it is specific to gaming, whereas the other subreddits deal with more banal real-life topics. It thus does seem to be the case that the uses of different spellings of OK differs across topics, i.e. across subreddits.
+
+Overall, we have found differences both within and across subreddits in the use of different orthographoc realizations of the words `'okay', 'ok', 'Ok', 'O.K', 'okey', 'k'`. Users of Reddit may make use of these forms. similar to how speakers may use different intonation to change the meaning of a single word.
+
+
 
 
 
