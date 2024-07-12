@@ -131,7 +131,7 @@ In a first exploratory step, we generated the Nearest Neighbors of each word for
 
 
 ### Word Senses 
-The idea was to find out the different word senses for the different spellings of okay and then see whether the subreddits yield different results. In a first step, we used the nltk library and the built-in wordnet function to see all possible definitions for the different versions of “ok”. This gave us the following results: 
+The idea was to find out the different word senses for the different spellings of OK and then see whether the subreddits yield different results. In a first step, we used the nltk library and the built-in wordnet function to see all possible definitions for the different versions of “ok”. This gave us the following results: 
 
 
 WordNet definitions for "ok":
@@ -208,7 +208,7 @@ definition 0: an endorsement
 
 ***
 
-In the next step, we employed the Lesk algorithm to find out the definition for each variation of "ok" based on its most similar words across subreddits. To briefly lay out what the Lesk algorithm does, it takes an input word and a sentence in which the given word appears in and then finds the overlapping words from the sentence in each gloss of the target word. The gloss with the most matches will be output as the definition. Unfortunately, in our case it did not yield any results and the definition for each variation of “ok” was the same in each subreddit. We then tried to see how many of the most similar words for each “ok” overlapped with the glosses in all subreddits. We found out that only for the word “okay” there was one match each for all subreddits. All other variations of “ok” across the subreddits had zero matches.
+In the next step, we employed the Lesk algorithm to find out the definition for each variation of OK based on its most similar words across subreddits. To briefly lay out what the Lesk algorithm does, it takes an input word and a sentence in which the given word appears in and then finds the overlapping words from the sentence in each gloss of the target word. The gloss with the most matches will be output as the definition. Unfortunately, in our case it did not yield any results and the definition for each variation of “OK” was the same in each subreddit. We then tried to see how many of the most similar words for each `OK` overlapped with the glosses in all subreddits. We found out that only for the word `okay` there was one match each for all subreddits. All other variations of “ok” across the subreddits had zero matches.
 
 ### Cosine Similarity 
 
