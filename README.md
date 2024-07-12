@@ -335,7 +335,7 @@ In terms of differences across subreddits, the cosine distribution between TIFU 
 </div>
 
 <div align="justify">
-Overall, we have found differences both within and across subreddits in the use of different orthographoc realizations of the words ` 'okay', 'ok', 'Ok', 'O.K', 'okey', 'k' `. Users of Reddit may make use of these forms. similar to how speakers may use different intonation to change the meaning of a single word.
+Overall, we have found differences both within and across subreddits in the use of different orthographoc realizations of the words `[``okay,` `ok,` `Ok,` `O.K,` `okey,` `k``]`. Users of Reddit may make use of these forms. similar to how speakers may use different intonation to change the meaning of a single word.
  
 </div>
 
