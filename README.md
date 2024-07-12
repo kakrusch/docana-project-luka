@@ -1,7 +1,7 @@
 ***
 # OK?
  
-Group members: Alex Weyhe, Kascha Kruschwitz, Ludmila Bajuk
+Group members: Alexander Weyhe, Kascha Kruschwitz, Ludmila Bajuk
 
 ## Introduction (Background)
 
@@ -348,9 +348,9 @@ Overall, we have found differences both within and across subreddits in the use 
 
 | Team Member           | Contributions                                             |
 |-----------------------|-----------------------------------------------------------|
-| Alex Weyhe            | Lesk Algorithm, graph design                              |                                                       
-| Kascha Kruschwitz     | Data preprocessing, Sentiment Analysis                    |
-| Ludmila Bajuk         | Word2Vec model, pairwise similarity   :)                  |
+| Alexander Weyhe       | Lesk Algorithm, Graph Design                              |                                                       
+| Kascha Kruschwitz     | Data Preprocessing, Sentiment Analysis                    |
+| Ludmila Bajuk         | Word2Vec Model, Pairwise Similarity                       |
 
 ## References
 
