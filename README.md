@@ -1,5 +1,5 @@
 ***
-
+<div align="justify">
 # OK?
  
 Group members: Alex Weyhe, Kascha Kruschwitz, Ludmila Bajuk
@@ -268,6 +268,8 @@ Overall, we have found differences both within and across subreddits in the use 
 
 
 ***
+</div>
+
 
 ## Individual Contributions
 
