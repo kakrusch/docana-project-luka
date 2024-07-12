@@ -43,9 +43,7 @@ The code consist of two documents:
 1. One for extracting and preprocessing the data, and running the skipgram model. Such model is saved after the last step, so that it can be used locally as input to the second file.
 
 2. The second file consist of the analysis of the data using fours comparison metrics and plotted the results obtained. 
-
 <br>
-
 ### Prepocessing
 
 <div align="justify">
