@@ -6,7 +6,7 @@ Group members: Alexander Weyhe, Kascha Kruschwitz, Ludmila Bajuk
 ## Introduction (Background)
 
 <div align="justify">
-In spoken language, the word <em>ok</em> is uttered frequently and can appear in different contexts. Multiple studies have investigated in which ways the word is used in English and other languages. According to Burchifield (1982 in Adegbija & Bello, 2019), the word <em>okay</em> can appear as a response or phrase to show acceptance or agreement. Additionally, it can be classified as an adjective to mean “correct”, good”, or “satisfactory. Condon (1986 in Lee, 2008) introduces <em>okey</em> as a marker of transitions in discourse. Finally, in another study by Adegbija & Bello (2001), the usage of <em>O.K.</em> was investigated in Nigerian English and compared to (“Standard”) English. In Nigerian English, it can be used as a gap filler, surprise, or discourse termination.
+In spoken language, the word <em>ok</em> is uttered frequently and can appear in different contexts. Multiple studies have investigated in which ways the word is used in English and other languages. According to Burchifield (1982 in Adegbija & Bello, 2019), the word <em>okay</em> can appear as a response or phrase to show acceptance or agreement. Additionally, it can be classified as an adjective to mean “correct”, good”, “satisfactory", or even "healthy". Condon (1986 in Lee, 2008) introduces <em>okey</em> as a marker of transitions in discourse. Finally, in another study by Adegbija & Bello (2001), the usage of <em>O.K.</em> was investigated in Nigerian English and compared to (“Standard”) English. In Nigerian English, it can be used as a gap filler, surprise, or discourse termination.
 </div>
 
 <p align="justify">
