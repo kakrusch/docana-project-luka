@@ -136,7 +136,7 @@ In our first exploratory step, we generated the Nearest Neighbors of each word f
 ### Word Senses 
 
 <div align="justify">
-The idea was to find out the different word senses for the different spellings of "OK" and then see whether the subreddits yield different results. FIrst, we used the NLTK library and the built-in wordnet function to see all possible definitions for the different versions of “ok”. This gave us the following results: 
+The idea was to find out the different word senses for the different spellings of "OK" and then see whether the subreddits yield different results. First, we used the NLTK library and the built-in wordnet function to see all possible definitions for the different versions of “ok”. This gave us the following results: 
 </div>
 
 
